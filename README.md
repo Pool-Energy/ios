@@ -72,6 +72,8 @@ Everything is read-only: the app consumes the public API without credentials.
 - **Xcode 26+** (built with Xcode 26.3 / Swift 6.2)
 - **iOS 17.0+** deployment target (iOS 26 recommended for the latest tab bar)
 - [XcodeGen](https://github.com/yonaskolb/XcodeGen): `brew install xcodegen`
+- To install on a **physical iPhone**: an Apple ID (free, 7-day builds) or an
+  Apple Developer Program membership, see [Run on an iPhone](#run-on-an-iphone)
 
 ### Open the project
 
@@ -84,15 +86,59 @@ open PoolEnergy.xcodeproj
 ```
 
 Then select your team in *Signing & Capabilities* — the bundle identifier is
-`energy.pool.app`, change it if it collides with another team.
+`energy.pool.app`; change it in `project.yml` if it collides with another team.
+The full signing and provisioning flow is described in
+[Run on an iPhone](#run-on-an-iphone).
 
-### Build from the command line
+### Build
+
+The project is generated, so run `xcodegen generate` after every `project.yml`
+change.
+
+#### Simulator (no signing required)
+
+```bash
+xcodegen generate
+
+xcodebuild -project PoolEnergy.xcodeproj -scheme PoolEnergy \
+  -configuration Debug \
+  -sdk iphonesimulator \
+  -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
+  -derivedDataPath build \
+  CODE_SIGNING_ALLOWED=NO build
+```
+
+The `.app` lands in `build/Build/Products/Debug-iphonesimulator/PoolEnergy.app`.
+
+#### Device (compile-only check)
+
+Same command with the device SDK; `CODE_SIGNING_ALLOWED=NO` only proves the code
+compiles for arm64, it does not produce an installable bundle:
 
 ```bash
 xcodebuild -project PoolEnergy.xcodeproj -scheme PoolEnergy \
-  -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
+  -configuration Release \
+  -sdk iphoneos \
+  -destination 'generic/platform=iOS' \
+  -derivedDataPath build \
   CODE_SIGNING_ALLOWED=NO build
 ```
+
+#### Release archive (for TestFlight / Ad Hoc)
+
+Signing must be configured first (see below):
+
+```bash
+xcodebuild -project PoolEnergy.xcodeproj -scheme PoolEnergy \
+  -configuration Release \
+  -destination 'generic/platform=iOS' \
+  -archivePath build/PoolEnergy.xcarchive \
+  -allowProvisioningUpdates archive
+```
+
+Then open **Window → Organizer → Archives** in Xcode and use *Distribute App*
+(the CLI `exportArchive` step needs an `ExportOptions.plist` matching your
+distribution method).
 
 ### Run on a simulator
 
@@ -101,6 +147,100 @@ xcrun simctl boot "iPhone 17 Pro"
 xcrun simctl install booted build/Build/Products/Debug-iphonesimulator/PoolEnergy.app
 xcrun simctl launch booted energy.pool.app
 ```
+
+### Run on an iPhone
+
+#### 1. Signing
+
+The app needs a signing identity and a provisioning profile. Two options:
+
+| | Free Apple ID | Apple Developer Program |
+| --- | --- | --- |
+| Cost | Free | 99 USD/year |
+| Certificate | 7 days, must re-sign weekly | 1 year |
+| Devices | Up to 3 apps, personal device only | 100 devices per type, TestFlight |
+| Setup | Xcode → *Signing & Capabilities* | Same, plus App Store Connect |
+
+With either option:
+
+1. **Xcode → Settings → Accounts** and add your Apple ID.
+2. Edit `project.yml` and change the bundle identifier — `energy.pool.app`
+   belongs to the Pool.Energy team, use your own reverse-DNS id:
+
+   ```yaml
+   targets:
+     PoolEnergy:
+       settings:
+         base:
+           PRODUCT_BUNDLE_IDENTIFIER: com.yourname.poolenergy
+   ```
+
+3. Run `xcodegen generate`, open the project, select the target, then
+   **Signing & Capabilities**:
+   - check *Automatically manage signing*;
+   - pick your **Team** (a *Personal Team* is enough with a free Apple ID);
+   - make sure the bundle identifier has no red error.
+4. On the iPhone, enable **Settings → Privacy & Security → Developer Mode**
+   (iOS 16+), plug it in, unlock it and accept *Trust This Computer*.
+5. Select the iPhone as the run destination and press **⌘R**.
+
+#### 2. Trust the developer certificate
+
+On first launch iOS refuses to open the app:
+
+> Untrusted Developer — Your device management settings do not allow using apps
+> from a developer on this iPhone.
+
+Fix it on the device: **Settings → General → VPN & Device Management → Developer
+App → Trust**. With a free Apple ID the app stops working after 7 days; plug the
+phone back in and run it from Xcode again to re-sign it.
+
+#### 3. Install from the command line
+
+With signing configured in the project:
+
+```bash
+# Build for the connected device (add DEVELOPMENT_TEAM if it is not in project.yml)
+xcodebuild -project PoolEnergy.xcodeproj -scheme PoolEnergy \
+  -configuration Debug \
+  -destination 'platform=iOS,id=<DEVICE_UDID>' \
+  -derivedDataPath build \
+  -allowProvisioningUpdates build
+
+# List devices, install, then launch
+xcrun devicectl list devices
+xcrun devicectl device install app --device <DEVICE_UDID> \
+  build/Build/Products/Debug-iphoneos/PoolEnergy.app
+xcrun devicectl device process launch --device <DEVICE_UDID> energy.pool.app
+```
+
+`xcrun devicectl` ships with Xcode 15+ and replaces the old `ios-deploy` /
+`simctl` workflow for physical devices.
+
+#### 4. Distribute with TestFlight or Ad Hoc
+
+Requires the paid Apple Developer Program:
+
+- **TestFlight** — archive the app, then *Organizer → Distribute App → App Store
+  Connect → Upload*. Create the app in App Store Connect, add internal testers
+  (external testers require a Beta App Review), and install via the TestFlight
+  app. This is the recommended path for sharing outside your own device.
+- **Ad Hoc** — *Distribute App → Ad Hoc* and register the testers' device UDIDs
+  in the developer portal. The `.ipa` can then be installed with Apple Configurator
+  or a service like Diawi.
+
+No capability or entitlement is required: the app only uses HTTPS and WSS.
+
+#### Device install troubleshooting
+
+| Symptom | Fix |
+| --- | --- |
+| *Untrusted Developer* on launch | Trust the certificate in Settings → General → VPN & Device Management |
+| *Unable to install “PoolEnergy”* | The bundle id is already registered to another team: change it in `project.yml` and regenerate |
+| App disappears after a week | Free Apple ID provisioning expires after 7 days: rebuild from Xcode |
+| *Developer Mode disabled* | Enable it in Settings → Privacy & Security → Developer Mode, then reboot |
+| Device not listed in Xcode | Unlock it, trust the computer, use a data-capable cable, or enable wireless debugging |
+| Signing error about a missing team | Set `DEVELOPMENT_TEAM` in `project.yml` or pass it on the `xcodebuild` command line |
 
 ## Project structure
 

@@ -47,7 +47,7 @@ struct RewardsView: View {
             KPICard(
                 title: l10n.t("REWARDS.TOTAL_DISTRIBUTED"),
                 value: Fmt.xch(vm.loadedAmount) + " XCH",
-                subtitle: "\(vm.payouts.count) \(l10n.t("COMMON.BLOCKS"))",
+                subtitle: "\(vm.total) " + l10n.t("COMMON.BLOCKS"),
                 icon: "arrow.down.circle"
             )
             KPICard(
@@ -60,7 +60,7 @@ struct RewardsView: View {
 
     private var list: some View {
         VStack(alignment: .leading, spacing: 12) {
-            SectionTitle(text: l10n.t("REWARDS.TITLE"), trailing: "\(vm.payouts.count)")
+            SectionTitle(text: l10n.t("REWARDS.TITLE"), trailing: "\(vm.total)")
             ForEach(vm.payouts) { payout in
                 Button {
                     selected = payout

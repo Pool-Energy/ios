@@ -7,6 +7,8 @@ final class BlocksViewModel {
     private(set) var stats: Stats?
     private(set) var blocks: [Block] = []
     private(set) var isLoading = false
+    private(set) var isLoadingMore = false
+    private(set) var total = 0
     private(set) var error: String?
     private var nextURL: String?
     private var live: LiveSocket?
@@ -28,6 +30,7 @@ final class BlocksViewModel {
             let (stats, page) = try await (statsTask, blocksTask)
             self.stats = stats
             self.blocks = page.results
+            self.total = page.count
             self.nextURL = page.next
         } catch {
             self.error = error.localizedDescription
@@ -35,7 +38,10 @@ final class BlocksViewModel {
     }
 
     func loadMoreIfNeeded(current block: Block) async {
-        guard let nextURL, blocks.suffix(5).contains(where: { $0.id == block.id }) else { return }
+        guard let nextURL, !isLoadingMore else { return }
+        guard blocks.suffix(5).contains(where: { $0.id == block.id }) else { return }
+        isLoadingMore = true
+        defer { isLoadingMore = false }
         do {
             let page: Page<Block> = try await APIClient.shared.page(from: nextURL)
             blocks.append(contentsOf: page.results)

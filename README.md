@@ -58,7 +58,7 @@ Everything is read-only: the app consumes the public API without credentials.
 | --- | --- |
 | UI | SwiftUI, iOS 17+, `@Observable` view models, no third-party UI libraries |
 | Charts | Swift Charts (`AreaMark`/`LineMark`) replacing ApexCharts |
-| Networking | `URLSession` with `async/await`, `Codable` with `convertFromSnakeCase` |
+| Networking | `URLSession` with `async/await`, `Codable`, request coalescing and a 5 s response cache |
 | Live data | `URLSessionWebSocketTask` with automatic reconnection |
 | State | Observation framework (`@State`, `@Environment`, `@Observable`) |
 | Localization | Bundled JSON dictionaries shared with the web app |
@@ -136,7 +136,19 @@ call the network directly.
 `APIClient` (`Core/APIClient.swift`) is a small value type around `URLSession`
 that appends paths to `https://pool.energy/api/v1.0/`, adds query items, decodes
 with `convertFromSnakeCase` and maps failures to `APIError` (`http`, `transport`,
-`decoding`). A `429` surfaces a dedicated rate-limit message.
+`decoding`).
+
+To avoid tripping the public API's edge protection, every request goes through
+two actors:
+
+- `RequestGate` serialises outgoing calls. The edge answers `429` as soon as two
+  requests are in flight from the same client, so the app never sends parallel
+  bursts (the `async let` fan-out of each screen is queued instead).
+- `ResponseCache` coalesces identical calls and keeps responses for five
+  seconds, so tab switches and live refreshes reuse the same payload.
+
+`429` responses are additionally retried up to four times honouring
+`Retry-After` (capped at 10 s) before surfacing a friendly message.
 
 `LiveSocket` (`Core/LiveSocket.swift`) wraps `URLSessionWebSocketTask`: it
 connects to `wss://pool.energy/ws/<channel>/`, yields a signal for every frame
@@ -231,9 +243,6 @@ Screenshots are then captured with `xcrun simctl io booted screenshot`.
 - **Read-only**: launcher login (BLS signature), settings updates, QR login and
   push notifications are not implemented. iOS push would require an APNs token
   field and sender on the API side (the schema currently stores an FCM token).
-- **Rate limiting**: the public API throttles anonymous traffic (1000 requests
-  per hour per IP). The app surfaces `429` with a retry action, but heavy
-  testing from one IP will hit the limit.
 - **Not shipped**: pool logs terminal, CSV export, partials feed, FAQ/team/fee
   pages.
 - **App Store**: the Pool.Energy services are AGPL-3.0, which historically

@@ -67,7 +67,7 @@ struct BlocksView: View {
 
     private var list: some View {
         VStack(alignment: .leading, spacing: 12) {
-            SectionTitle(text: l10n.t("BLOCKS.TITLE_FOUND"), trailing: "\(vm.blocks.count)")
+            SectionTitle(text: l10n.t("BLOCKS.TITLE_FOUND"), trailing: "\(vm.total)")
             ForEach(vm.blocks) { block in
                 VStack(alignment: .leading, spacing: 6) {
                     HStack {

@@ -6,6 +6,8 @@ import Observation
 final class RewardsViewModel {
     private(set) var payouts: [Payout] = []
     private(set) var isLoading = false
+    private(set) var isLoadingMore = false
+    private(set) var total = 0
     private(set) var error: String?
     private(set) var addresses: [PayoutAddress] = []
     private(set) var isLoadingAddresses = false
@@ -34,6 +36,7 @@ final class RewardsViewModel {
                 query: ["limit": "\(pageSize)", "offset": "0"]
             )
             payouts = page.results
+            total = page.count
             nextURL = page.next
         } catch {
             self.error = error.localizedDescription
@@ -41,7 +44,10 @@ final class RewardsViewModel {
     }
 
     func loadMoreIfNeeded(current payout: Payout) async {
-        guard let nextURL, payouts.suffix(5).contains(where: { $0.id == payout.id }) else { return }
+        guard let nextURL, !isLoadingMore else { return }
+        guard payouts.suffix(5).contains(where: { $0.id == payout.id }) else { return }
+        isLoadingMore = true
+        defer { isLoadingMore = false }
         do {
             let page: Page<Payout> = try await APIClient.shared.page(from: nextURL)
             payouts.append(contentsOf: page.results)

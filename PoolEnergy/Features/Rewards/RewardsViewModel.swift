@@ -17,14 +17,6 @@ final class RewardsViewModel {
     private var lastRefresh = Date.distantPast
     private let pageSize = 30
 
-    var loadedAmount: Double {
-        payouts.reduce(0) { $0 + Double($1.amount) }
-    }
-
-    var loadedFees: Double {
-        payouts.reduce(0) { $0 + Double($1.fee) }
-    }
-
     func load() async {
         isLoading = payouts.isEmpty
         error = nil

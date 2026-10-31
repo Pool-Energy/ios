@@ -16,7 +16,6 @@ struct RewardsView: View {
                     } else if vm.payouts.isEmpty, vm.isLoading {
                         LoadingView()
                     } else {
-                        summary
                         list
                     }
                 }
@@ -39,22 +38,6 @@ struct RewardsView: View {
             .sheet(item: $selected) { payout in
                 PayoutDetailView(payout: payout, viewModel: vm)
             }
-        }
-    }
-
-    private var summary: some View {
-        LazyVGrid(columns: [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)], spacing: 12) {
-            KPICard(
-                title: l10n.t("REWARDS.TOTAL_DISTRIBUTED"),
-                value: Fmt.xch(vm.loadedAmount) + " XCH",
-                subtitle: "\(vm.total) " + l10n.t("COMMON.BLOCKS"),
-                icon: "arrow.down.circle"
-            )
-            KPICard(
-                title: l10n.t("REWARDS.TOTAL_FEE"),
-                value: Fmt.xch(vm.loadedFees) + " XCH",
-                icon: "percent"
-            )
         }
     }
 

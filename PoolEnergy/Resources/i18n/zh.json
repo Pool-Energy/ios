@@ -1,0 +1,428 @@
+{
+  "MENUITEMS": {
+    "MENU": {
+      "TEXT": "菜单"
+    },
+    "DASHBOARD": {
+      "TEXT": "仪表盘"
+    },
+    "FARMERS": {
+      "TEXT": "农民"
+    },
+    "BLOCKS": {
+      "TEXT": "区块"
+    },
+    "REWARDS": {
+      "TEXT": "奖励"
+    },
+    "PARTIALS": {
+      "TEXT": "Partials"
+    },
+    "CHIA": {
+      "TEXT": "Chia",
+      "LIST": {
+        "BLOCKCHAIN_STATE": "区块链状态",
+        "ECOSYSTEM_ACT": "生态系统活动",
+        "MEMPOOL_TXS_FEES": "Mempool 交易与费用",
+        "NAKAMOTO_COEF": "中本聪系数",
+        "PEER_INFO": "对等节点信息"
+      }
+    },
+    "POOL": {
+      "TEXT": "矿池",
+      "LIST": {
+        "STATUS": "状态",
+        "STATS": "统计",
+        "LOGS": "日志"
+      }
+    },
+    "API": {
+      "TEXT": "API",
+      "LIST": {
+        "SWAGGER": "Swagger",
+        "REDOC": "Redoc",
+        "BROWSER": "浏览器"
+      }
+    },
+    "INFO": {
+      "TEXT": "信息",
+      "LIST": {
+        "FAQ": "常见问题",
+        "FEE": "费用",
+        "TEAM": "团队",
+        "GITHUB": "Github"
+      }
+    },
+    "CONTACT": {
+      "TEXT": "联系",
+      "LIST": {
+        "TELEGRAM": "Telegram",
+        "BLUESKY": "Bluesky",
+        "XING": "X",
+        "REDDIT": "Reddit",
+        "YOUTUBE": "Youtube",
+        "FACEBOOK": "Facebook",
+        "DISCORD": "Discord",
+        "GITHUB": "Github"
+      }
+    }
+  },
+  "FARMERS": {
+    "STATS": {
+      "DUST_STORM": "检测到粉尘风暴：",
+      "POOL_SPACE": "矿池空间",
+      "ACTIVE_TOTAL_FARMERS": "活跃 / 全部农民",
+      "EFFORT": "当前 / 平均努力值",
+      "ESTIMATE_TO_WIN": "预计中奖时间",
+      "CURRENT_FEE": "当前费用",
+      "XCH_PRICE": "XCH 价格",
+      "INFO": "信息",
+      "CHIA_DOC": "Chia 区块链文档",
+      "DUST_STORM_DESC": "Chia mempool 目前非常拥堵（已满 {{pct}}%）。",
+      "DUST_STORM_DELAY": "可能暂时需要交易手续费，付款/吸收时间可能会延迟。",
+      "HALVING_CURRENT": "当前区块：{{block}}。下一个减半区块：{{next}}。",
+      "HALVING_PROGRESS": "进度：",
+      "HALVING_VISIT": "欲了解更多详情，请访问"
+    },
+    "LEADERBOARD": {
+      "TITLE": "排行榜"
+    },
+    "LIST": {
+      "TITLE": "农民列表",
+      "ALL": "全部农民",
+      "LAUNCHER_ID": "启动器 ID",
+      "SINGLETON_PUZZLE_HASH": "Singleton 谜题哈希",
+      "POINTS": "积分（24 小时）",
+      "DIFFICULTY": "难度",
+      "UTILIZATION_SPACE": "利用率空间",
+      "ESTIMATED_SPACE": "预计空间",
+      "SEARCH_PLACEHOLDER": "搜索农民",
+      "WON_LAST_BLOCK": "赢得最近区块"
+    }
+  },
+  "FARMER": {
+    "STATS": {
+      "OFFLINE": "离线（无 partials）",
+      "ONLINE": "在线",
+      "OFFLINE_LEFT": "离线（已离开矿池）",
+      "ESTIMATED_SIZE": "预计大小",
+      "UTILIZATION_SPACE": "利用率空间",
+      "NO_DATA": "未找到数据。"
+    },
+    "TABS": {
+      "OVERVIEW": "概览",
+      "JOINED_AT": "加入时间",
+      "POINTS": "积分（PPLNS）",
+      "DIFFICULTY": "难度",
+      "ESTIMATE_TO_WIN": "预计中奖时间（ETW）",
+      "CURRENT_EFFORT": "当前努力值",
+      "DIFFICULTY_POINTS": "难度与积分",
+      "PARTIALS": "Partials",
+      "PARTIALS_24H": "Partials（24 小时）",
+      "POINTS_24H": "积分（24 小时）",
+      "HARVESTER": "收割机（Harvester）",
+      "HARVESTERS": "收割机",
+      "SUCCESSFUL_PARTIALS": "成功的 Partials",
+      "FAILED_PARTIALS": "失败的 Partials",
+      "PERFORMANCE": "性能",
+      "SHOW_PARTIALS_FAILED_ONLY": "仅显示失败的 partials",
+      "SHOW_PARTIALS_TOO_LATE_ONLY": "仅显示过迟的 partials",
+      "BLOCKS": "区块",
+      "REWARDS": "奖励",
+      "PAYOUTS": "付款",
+      "LOGS": "日志",
+      "NO_PARTIAL": "未找到 partial。",
+      "PARTIALS_LABEL": "Partials：",
+      "PLOT_FILENAME": "Plot 文件名",
+      "SUCCESS": "成功",
+      "NO_HARVESTER": "未找到收割机。",
+      "TOTAL_POINTS": "总积分",
+      "PARTIALS_SUCCESSFUL": "成功的 Partials",
+      "PARTIALS_FAILED": "失败的 Partials",
+      "TOTAL_BLOCKS": "总区块数",
+      "AVERAGE_EFFORT": "平均努力值",
+      "EST_TIME_PER_BLOCK": "每个区块预计时间",
+      "NO_BLOCK": "未找到区块。",
+      "POOL_SIZE": "矿池大小",
+      "LAST_24_HOURS": "最近 24 小时",
+      "TODAY": "今天",
+      "YESTERDAY": "昨天",
+      "LAST_7_DAYS": "最近 7 天",
+      "LAST_30_DAYS": "最近 30 天",
+      "PAID": "已支付",
+      "PAYOUT_PROGRESS": "进行中",
+      "NO_REWARD": "未找到奖励。",
+      "TOTAL_TRANSACTIONS": "交易总数",
+      "TOTAL_PAID": "已支付总额",
+      "TOTAL_UNPAID": "未支付总额",
+      "NO_PAYOUT": "未找到付款。",
+      "CONFIRMED_BLOCK": "已确认区块",
+      "DOWNLOAD_CSV": "下载 CSV",
+      "CRITICAL_TITLE": "严重：",
+      "CRITICAL_MSG": "矿池不支持版本 {{version}}。请将收割机升级到最新版本。需要最低版本 {{min}}，目前您的 partials 将不被接受。",
+      "WARNING_TITLE": "警告：",
+      "WARNING_MSG": "矿池支持版本 {{version}}，但请尽可能将收割机升级到最新版本。"
+    }
+  },
+  "PARTIALS": {
+    "OVERVIEW": {
+      "TITLE": "Partials 概览（全部农民）"
+    },
+    "BUTTONS": {
+      "TOTAL_RECEIVED": "partials",
+      "TOTAL_BLOCKS": "区块",
+      "RESUME": "继续",
+      "PAUSE": "暂停",
+      "CLEAR": "清除"
+    },
+    "LIST": {
+      "TIME": "时间",
+      "SIGNAGE_POINT": "信标点",
+      "TO_BE_VALIDATED": "待验证",
+      "VALID": "有效",
+      "STALE": "过期",
+      "DUPLICATE": "重复",
+      "INVALID": "无效",
+      "BLOCKS_FOUND": "已找到区块",
+      "ACTIVITY": "实时活动（最近 {{hours}} 小时）",
+      "FARMER": "农民",
+      "PLOT_ID": "Plot ID",
+      "CHIA_VERSION": "Chia 版本",
+      "RESOLVED_IN": "解析用时",
+      "NO_PARTIAL_RETAINED": "该信标点未保留任何 partial。",
+      "SHOWING_200": "正在显示该信标点最近 200 个 partials — 较旧的已从实时视图中移除。",
+      "WAITING": "正在等待实时 partials...",
+      "MATCHED_TOOLTIP": "按最接近的时间戳匹配，2 分钟以内"
+    }
+  },
+  "BREADCRUMBS": {
+    "HOME": "首页",
+    "INFO": "信息",
+    "FARMERS": "农民",
+    "DETAILS": "详情",
+    "REWARDS": "奖励",
+    "BLOCKS": "区块",
+    "POOL": "矿池",
+    "STATUS": "状态",
+    "STATS": "统计",
+    "LOGS": "日志",
+    "JOIN": "加入",
+    "SETTINGS": "设置",
+    "CHIA": "Chia",
+    "FEE": "费用",
+    "TEAM": "团队",
+    "FAQ": "FAQ",
+    "PARTIALS": "Partials",
+    "FARMER": "农民"
+  },
+  "TOPBAR": {
+    "JOIN_POOL": "加入我们的矿池",
+    "LANGUAGE_ALT": "页眉语言",
+    "USER_IMAGE_ALT": "用户头像"
+  },
+  "COMMON": {
+    "DATE": "日期",
+    "DATETIME": "日期时间",
+    "AMOUNT": "金额",
+    "FEE": "费用",
+    "STATUS": "状态",
+    "HEIGHT": "高度",
+    "UNKNOWN": "未知",
+    "CONFIRMED": "已确认",
+    "PENDING": "待处理",
+    "PRICE": "价格",
+    "ID": "ID",
+    "NAME": "名称",
+    "VERSION": "版本",
+    "ADDRESS": "地址",
+    "SYNCED": "已同步",
+    "SYNCING": "同步中",
+    "NOT_SYNCED": "未同步",
+    "YES": "是",
+    "NO": "否",
+    "SIZE": "大小",
+    "POINTS": "积分",
+    "TRANSACTION": "交易",
+    "AVAILABLE": "可用",
+    "LOADING": "加载中...",
+    "ONLINE": "在线",
+    "OFFLINE": "离线",
+    "UNDEFINED": "未定义",
+    "DIFFICULTY": "难度",
+    "ROLE": "角色",
+    "FINGERPRINT": "指纹",
+    "LOCATION": "位置",
+    "MEMPOOL": "Mempool",
+    "HARVESTER": "收割机",
+    "PLOT_SIZE": "Plot 大小",
+    "CHIA_VERSION": "Chia 版本",
+    "TIME_TAKEN": "用时",
+    "STATE": "状态",
+    "BLOCKS": "区块",
+    "AUTO": "（自动）",
+    "GIGAHORSE_TITLE": "此奖励已被 Gigahorse 作为费用收取",
+    "PROGRESS": "进度",
+    "DAY": "天",
+    "DAYS": "天",
+    "CLOSE": "关闭"
+  },
+  "CHART": {
+    "BLOCKS": "区块",
+    "EFFORT": "努力值",
+    "DIFFICULTY": "难度",
+    "POINTS": "积分",
+    "SUCCESSFUL_PARTIALS": "成功的 Partials",
+    "FAILED_PARTIALS": "失败的 Partials",
+    "PARTIALS_TITLE": "成功与失败的 Partials",
+    "PARTIAL_TIME_TAKEN": "Partials 用时",
+    "AMOUNT_XCH": "金额（XCH）",
+    "SIZE_8H": "大小（8 小时平均）",
+    "SIZE_24H": "大小（24 小时平均）",
+    "VALID": "有效",
+    "TO_BE_VALIDATED": "待验证",
+    "INVALID_REVERTED": "无效 / 已回滚",
+    "DUPLICATE": "重复"
+  },
+  "FEE": {
+    "TITLE": "矿池费用",
+    "DESC_1": "目前我们收取 0.75% 的费用。该费用会从每位农民的奖励中扣除。",
+    "DESC_2": "例如，如果在某一轮中农民应获得 0.05 XCH 的份额，那么其中的 0.75%（0.000375 XCH）将作为矿池费用保留，其余（0.049625 XCH）将记入农民账户。"
+  },
+  "TEAM": {
+    "ROLE": "所有者与全栈开发",
+    "DJERFY_HANDLE": "🌱 DJΞRFY 🚀"
+  },
+  "POOL_LOGS": {
+    "SHOW_PARTIALS": "显示 partials 日志",
+    "SHOW_PAYMENTS": "显示付款日志"
+  },
+  "JOIN": {
+    "LATENCY": "来自 {{name}} 的延迟（{{url}}）",
+    "REQUIREMENTS": "要求",
+    "REQ_CLIENT_PART1": "请确保您使用支持矿池图的官方 Chia 客户端，",
+    "REQ_CLIENT_VERSION": "版本 2.7.0 或更高",
+    "REQ_CLIENT_PART2": "您可以",
+    "REQ_CLIENT_LINK": "在此查看官方 Chia 说明",
+    "REQ_SYNC": "加入矿池之前，您的节点和钱包必须与 Chia 区块链完全同步。",
+    "REQ_MOJO": "您需要 1 个 Mojo（0.000000000001 XCH），可通过官方水龙头网站获取：",
+    "POOL_ADDRESS": "矿池地址",
+    "GLOBAL_SERVER": "全局服务器：",
+    "JOIN_CLI": "通过 CLI 加入矿池",
+    "CLI_WALLET_ID": "获取您的钱包 ID：",
+    "CLI_JOIN_PART1": "加入",
+    "CLI_JOIN_PART2": "矿池：",
+    "CLI_CONFIRM_1": "它会请求您的确认，请检查所有详细信息并按 Y 确认。",
+    "CLI_CONFIRM_2": "稍等几分钟，尽情享受吧！🎉"
+  },
+  "REWARDS": {
+    "TOTAL_CLAIMED": "已申领总额",
+    "TOTAL_DISTRIBUTED": "已分配总额",
+    "TOTAL_FEE": "费用总额",
+    "CHART_TITLE": "奖励图表",
+    "TITLE": "奖励"
+  },
+  "REWARD": {
+    "BLOCK_HEIGHT": "区块高度",
+    "FARMERS_LIST": "农民列表",
+    "REWARD_ID": "奖励 ID",
+    "LAUNCHER_ID": "启动器 ID",
+    "POOL_FEE": "矿池费用"
+  },
+  "BLOCKS": {
+    "TOTAL_BLOCKS_FOUND": "已找到区块总数",
+    "EST_TIME_PER_BLOCK": "每个区块预计时间",
+    "CURRENT_EFFORT": "当前努力值",
+    "CHART_TITLE": "区块图表",
+    "BLOCKS_PER_DAY": "每日区块数",
+    "BLOCKS_PER_EFFORT": "每努力值区块数",
+    "TITLE_FOUND": "已找到的区块",
+    "FARMER": "农民",
+    "SINGLETON": "Singleton",
+    "POOL_REWARD": "矿池奖励",
+    "POOL_SPACE": "矿池空间",
+    "POOL_EFFORT": "矿池努力值",
+    "LUCKY": "幸运",
+    "AVERAGE": "平均",
+    "UNLUCKY": "倒霉"
+  },
+  "POOL_STATS": {
+    "POOL_SPACE_7D": "矿池空间（7 天）",
+    "MEMPOOL_7D": "Mempool 大小（7 天）",
+    "NETSPACE_7D": "全网算力大小（7 天）",
+    "XCH_PRICE_7D": "XCH 价格（7 天）",
+    "PARTIALS_TOTAL": "Partials 总数",
+    "VERSIONS": "版本",
+    "ERRORS": "错误",
+    "HOSTS": "主机"
+  },
+  "LOGIN": {
+    "AUTH_FAILED_TITLE": "身份验证失败！",
+    "AUTH_FAILED_DESC": "身份验证失败！请检查您的登录 URL 并重试。",
+    "GLOBAL": "全局",
+    "FARMER_NAME": "农民名称",
+    "FARMER_EMAIL": "农民邮箱",
+    "FARMER_PICTURE": "农民照片",
+    "NOT_SET": "（未设置）",
+    "MIN_PAYOUT": "最低付款（XCH）",
+    "DIFF_LOWEST": "最低 — 每天发送的 partials 数量翻倍",
+    "DIFF_LOW": "低 — 每天多发送 50% 的 partials",
+    "DIFF_MEDIUM": "默认 — 每天发送约 600 个 partials",
+    "DIFF_HIGH": "高 — 每天少发送 25% 的 partials",
+    "DIFF_HIGHEST": "最高 — 每天少发送 50% 的 partials",
+    "DIFF_CUSTOM": "自定义 — 每天发送的 partials 数量",
+    "DIFF_EXPERT": "专家 — 手动设置难度（警告）",
+    "HARVESTER_RENAME_PLACEHOLDER": "输入收割机名称",
+    "SAVE": "保存设置",
+    "SAVE_ERROR": "某个参数发生错误。请检查表单并重试。"
+  },
+  "POOL_STATUS": {
+    "BLOCKCHAIN_HEIGHT": "区块链高度",
+    "POOL_SHARE": "矿池份额",
+    "API_STATUS": "API 状态",
+    "HEALTHY": "健康",
+    "NODES_STATUS": "节点状态",
+    "OK": "正常",
+    "DEGRADED": "降级",
+    "CRITICAL": "严重",
+    "WALLETS_STATUS": "钱包状态",
+    "UNHEALTHY": "不健康",
+    "POOL_WALLETS": "矿池钱包",
+    "POOL_NODES": "矿池节点",
+    "MAINTENANCE": "维护",
+    "PRIMARY": "主",
+    "STANDBY": "备用",
+    "UNAVAILABLE": "不可用",
+    "DUST_STORM": "检测到粉尘风暴："
+  },
+  "FAQ": {
+    "P0_TITLE": "什么是 Pool.Energy？",
+    "P0_BODY": "Pool.Energy 是一个 Chia 耕种矿池。好的设备只能让您走这么远。您可能运行着几台高功率的 hdd-plotter，但您仍然只是 Chia 耕种海洋中的一滴水。尽管您已在设备和运营所需的电力上投入了大量资金，但您真正挖到区块的机会相当渺茫。无法保证您何时会收到区块奖励付款，甚至无法保证您会收到此类付款。如果您想要固定收入，那么在 Chia 耕种矿池中您的机会会大得多。",
+    "P1_TITLE": "最低付款是多少？",
+    "P1_BODY": "Pool.Energy 对付款没有任何最低金额。每一块图和每一位农民对我们来说都很重要。您可以自由加入，无需考虑农场规模。",
+    "P2_TITLE": "Chia 客户端版本？",
+    "P2_BODY": "自 2026 年 4 月 30 日起，Pool.Energy 仅支持 Chia v2.7.0 或更高版本。使用 v2.7.0 之前 Chia 的农民无法创建区块。矿池会拒绝来自旧版本的所有 partials！",
+    "P3_TITLE": "如何计算矿池奖励？",
+    "P3_BODY_1": "我们使用",
+    "P3_PPLNS": "PPLNS（按最近 N 份股支付）",
+    "P3_BODY_2": "来分配 Chia 农民奖励。当农民挖到区块时，每位农民将按过去 24 小时发送给矿池的 partials 获得相应的份额比例。当我们的农民挖到区块时，付款将在一小时内完成。由于粉尘风暴，时间可能有所变化，但我们不会在矿池钱包中存储任何 Chia。请随时在矿池状态部分查看我们的地址。",
+    "P4_TITLE": "如何更改农民设置？",
+    "P4_BODY_1": "Launcher ID 是每位农民在每块 NFT 图中的标识方式。它是一长串十六进制字符串，不便于使用。为了在我们的矿池中更容易识别，我们允许用户设置一个友好的名称，作为您 Launcher ID 的别名。",
+    "P4_BODY_2": "在设置页面，您可以更改别名、个人头像、邮箱（通知）、最低付款和难度。",
+    "P4_IMG_ALT": "农民设置",
+    "P5_TITLE": "如何登录（CLI）？",
+    "P5_BODY_1": "获取您的 Launcher ID：",
+    "P5_BODY_2": "使用您的 Launcher ID，获取链接：",
+    "P6_TITLE": "如何登录（GUI）？",
+    "P6_BODY_1": "打开 Chia GUI 和 Pooling（1），然后使用 https://chia.pool.energy 选择我们的矿池（2）。",
+    "P6_BODY_2": "点击三点菜单（3），然后点击 View Pool Login Link（4）。",
+    "P6_IMG_ALT": "GUI 登录",
+    "P7_TITLE": "如何设置自定义难度？",
+    "P7_BODY_1": "我们的矿池会根据您提交的 partials 数量调整难度。其工作原理如下：",
+    "P7_BODY_2": "首先，我们根据您选择的难度设定一个目标 partials 数量。难度选项包括 LOWEST、LOW、MEDIUM、HIGH 和 HIGHEST。如果您使用 Gigahorse，还可以选择带有自定义值的 CUSTOM 难度。",
+    "P7_BODY_3": "该值就是您每天发送的目标 partials 数量。例如，100 会将目标 partials 数量设为 100。您应该以发送大约这个数量的 partials 为目标。如果您发送的明显偏少或偏多，系统将相应调整所用时间。",
+    "P7_BODY_4": "- 如果最近的 partials 数量少于目标数量，且所用时间少于目标时间的 80%，则返回当前难度不变。",
+    "P7_BODY_5": "- 如果最近的 partials 数量少于目标数量，则所用时间按目标数量与最近 partials 数量之比进行乘法调整。",
+    "P7_BODY_6": "- 如果最近的 partials 数量超过目标数量的 150%，则所用时间也会通过减少进行调整，使其看起来您发送得较少。",
+    "P7_BODY_7": "最后，新难度通过将当前难度乘以目标时间与所用时间之比来计算，并返回难度与新难度之间的较大值。"
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "MENUITEMS": {
+    "MENU": {
+      "TEXT": "Menü"
+    },
+    "DASHBOARD": {
+      "TEXT": "Dashboards"
+    },
+    "FARMERS": {
+      "TEXT": "Farmer"
+    },
+    "BLOCKS": {
+      "TEXT": "Blöcke"
+    },
+    "REWARDS": {
+      "TEXT": "Belohnungen"
+    },
+    "PARTIALS": {
+      "TEXT": "Partials"
+    },
+    "CHIA": {
+      "TEXT": "Chia",
+      "LIST": {
+        "BLOCKCHAIN_STATE": "Blockchain-Status",
+        "ECOSYSTEM_ACT": "Ökosystem-Aktivität",
+        "MEMPOOL_TXS_FEES": "Mempool, Txs & Gebühren",
+        "NAKAMOTO_COEF": "Nakamoto-Koeffizient",
+        "PEER_INFO": "Peer-Informationen"
+      }
+    },
+    "POOL": {
+      "TEXT": "Pool",
+      "LIST": {
+        "STATUS": "Status",
+        "STATS": "Statistiken",
+        "LOGS": "Logs"
+      }
+    },
+    "API": {
+      "TEXT": "API",
+      "LIST": {
+        "SWAGGER": "Swagger",
+        "REDOC": "Redoc",
+        "BROWSER": "Browser"
+      }
+    },
+    "INFO": {
+      "TEXT": "Info",
+      "LIST": {
+        "FAQ": "FAQ",
+        "FEE": "Gebühren",
+        "TEAM": "Team",
+        "GITHUB": "Github"
+      }
+    },
+    "CONTACT": {
+      "TEXT": "Kontakt",
+      "LIST": {
+        "TELEGRAM": "Telegram",
+        "BLUESKY": "Bluesky",
+        "XING": "X",
+        "REDDIT": "Reddit",
+        "YOUTUBE": "Youtube",
+        "FACEBOOK": "Facebook",
+        "DISCORD": "Discord",
+        "GITHUB": "Github"
+      }
+    }
+  },
+  "FARMERS": {
+    "STATS": {
+      "DUST_STORM": "Staubsturm erkannt:",
+      "POOL_SPACE": "Pool-Speicher",
+      "ACTIVE_TOTAL_FARMERS": "Aktive / Gesamte Farmer",
+      "EFFORT": "Effort aktuell / Durchschnitt",
+      "ESTIMATE_TO_WIN": "Geschätzte Zeit bis zum Gewinn",
+      "CURRENT_FEE": "Aktuelle Gebühr",
+      "XCH_PRICE": "XCH-Preis",
+      "INFO": "Informationen",
+      "CHIA_DOC": "Chia-Blockchain-Dokumentation",
+      "DUST_STORM_DESC": "die Chia-Mempool ist derzeit sehr überlastet ({{pct}}% voll).",
+      "DUST_STORM_DELAY": "Transaktionsgebühren können vorübergehend erforderlich sein und der Zeitpunkt von Auszahlungen/Absorbierung kann sich verzögern.",
+      "HALVING_CURRENT": "Aktueller Block: {{block}}. Nächster Halving-Block: {{next}}.",
+      "HALVING_PROGRESS": "Fortschritt:",
+      "HALVING_VISIT": "Für weitere Details besuchen Sie bitte"
+    },
+    "LEADERBOARD": {
+      "TITLE": "Rangliste"
+    },
+    "LIST": {
+      "TITLE": "Farmer-Liste",
+      "ALL": "Alle Farmer",
+      "LAUNCHER_ID": "Launcher-ID",
+      "SINGLETON_PUZZLE_HASH": "Singleton-Puzzle-Hash",
+      "POINTS": "Punkte (24 Stunden)",
+      "DIFFICULTY": "Schwierigkeit",
+      "UTILIZATION_SPACE": "Auslastungsspeicher",
+      "ESTIMATED_SPACE": "Geschätzter Speicher",
+      "SEARCH_PLACEHOLDER": "Farmer suchen",
+      "WON_LAST_BLOCK": "Letzten Block gewonnen"
+    }
+  },
+  "FARMER": {
+    "STATS": {
+      "OFFLINE": "Offline (keine Partials)",
+      "ONLINE": "Online",
+      "OFFLINE_LEFT": "Offline (Pool verlassen)",
+      "ESTIMATED_SIZE": "Geschätzte Größe",
+      "UTILIZATION_SPACE": "Auslastungsspeicher",
+      "NO_DATA": "Keine Daten gefunden."
+    },
+    "TABS": {
+      "OVERVIEW": "Übersicht",
+      "JOINED_AT": "Beigetreten am",
+      "POINTS": "Punkte (PPLNS)",
+      "DIFFICULTY": "Schwierigkeit",
+      "ESTIMATE_TO_WIN": "Geschätzte Zeit bis zum Gewinn (ETW)",
+      "CURRENT_EFFORT": "Aktueller Effort",
+      "DIFFICULTY_POINTS": "Schwierigkeit & Punkte",
+      "PARTIALS": "Partials",
+      "PARTIALS_24H": "Partials (24h)",
+      "POINTS_24H": "Punkte (24h)",
+      "HARVESTER": "Harvester(s)",
+      "HARVESTERS": "Harvester",
+      "SUCCESSFUL_PARTIALS": "Erfolgreiche Partials",
+      "FAILED_PARTIALS": "Fehlgeschlagene Partials",
+      "PERFORMANCE": "Leistung",
+      "SHOW_PARTIALS_FAILED_ONLY": "Nur fehlgeschlagene Partials anzeigen",
+      "SHOW_PARTIALS_TOO_LATE_ONLY": "Nur zu späte Partials anzeigen",
+      "BLOCKS": "Blöcke",
+      "REWARDS": "Belohnungen",
+      "PAYOUTS": "Auszahlungen",
+      "LOGS": "Logs",
+      "NO_PARTIAL": "Kein Partial gefunden.",
+      "PARTIALS_LABEL": "Partials:",
+      "PLOT_FILENAME": "Plot-Dateiname",
+      "SUCCESS": "ERFOLG",
+      "NO_HARVESTER": "Kein Harvester gefunden.",
+      "TOTAL_POINTS": "Gesamtpunkte",
+      "PARTIALS_SUCCESSFUL": "Erfolgreiche Partials",
+      "PARTIALS_FAILED": "Fehlgeschlagene Partials",
+      "TOTAL_BLOCKS": "Gesamte Blöcke",
+      "AVERAGE_EFFORT": "Durchschnittlicher Effort",
+      "EST_TIME_PER_BLOCK": "Geschätzte Zeit pro Block",
+      "NO_BLOCK": "Kein Block gefunden.",
+      "POOL_SIZE": "Pool-Größe",
+      "LAST_24_HOURS": "Letzte 24 Stunden",
+      "TODAY": "Heute",
+      "YESTERDAY": "Gestern",
+      "LAST_7_DAYS": "Letzte 7 Tage",
+      "LAST_30_DAYS": "Letzte 30 Tage",
+      "PAID": "Bezahlt",
+      "PAYOUT_PROGRESS": "Fortschritt",
+      "NO_REWARD": "Keine Belohnung gefunden.",
+      "TOTAL_TRANSACTIONS": "Gesamttransaktion(en)",
+      "TOTAL_PAID": "Gesamt bezahlt",
+      "TOTAL_UNPAID": "Gesamt unbezahlt",
+      "NO_PAYOUT": "Keine Auszahlung gefunden.",
+      "CONFIRMED_BLOCK": "Bestätigter Block",
+      "DOWNLOAD_CSV": "CSV herunterladen",
+      "CRITICAL_TITLE": "Kritisch:",
+      "CRITICAL_MSG": "Version {{version}} wird vom Pool nicht unterstützt. Bitte aktualisieren Sie Ihren Harvester auf die neueste Version. Mindestversion {{min}} ist erforderlich; derzeit werden Ihre Partials nicht akzeptiert.",
+      "WARNING_TITLE": "Warnung:",
+      "WARNING_MSG": "Version {{version}} wird vom Pool unterstützt, aber aktualisieren Sie Ihren Harvester möglichst auf die neueste Version."
+    }
+  },
+  "PARTIALS": {
+    "OVERVIEW": {
+      "TITLE": "Partials-Übersicht (alle Farmer)"
+    },
+    "BUTTONS": {
+      "TOTAL_RECEIVED": "Partials",
+      "TOTAL_BLOCKS": "Blöcke",
+      "RESUME": "Fortsetzen",
+      "PAUSE": "Pause",
+      "CLEAR": "Leeren"
+    },
+    "LIST": {
+      "TIME": "Zeit",
+      "SIGNAGE_POINT": "Signage-Point",
+      "TO_BE_VALIDATED": "Zu validieren",
+      "VALID": "Gültig",
+      "STALE": "Veraltet",
+      "DUPLICATE": "Duplikat",
+      "INVALID": "Ungültig",
+      "BLOCKS_FOUND": "Gefundene Blöcke",
+      "ACTIVITY": "Live-Aktivität (letzte {{hours}}h)",
+      "FARMER": "Farmer",
+      "PLOT_ID": "Plot-ID",
+      "CHIA_VERSION": "Chia-Version",
+      "RESOLVED_IN": "Aufgelöst in",
+      "NO_PARTIAL_RETAINED": "Für diesen Signage-Point wurde kein Partial behalten.",
+      "SHOWING_200": "Die letzten 200 Partials für diesen Signage-Point werden angezeigt – ältere wurden aus dieser Live-Ansicht entfernt.",
+      "WAITING": "Warten auf Live-Partials...",
+      "MATCHED_TOOLTIP": "Durch den nächstgelegenen Zeitstempel zugeordnet, innerhalb von 2 Minuten"
+    }
+  },
+  "BREADCRUMBS": {
+    "HOME": "Startseite",
+    "INFO": "Info",
+    "FARMERS": "Farmer",
+    "DETAILS": "Details",
+    "REWARDS": "Belohnungen",
+    "BLOCKS": "Blöcke",
+    "POOL": "Pool",
+    "STATUS": "Status",
+    "STATS": "Statistiken",
+    "LOGS": "Logs",
+    "JOIN": "Beitreten",
+    "SETTINGS": "Einstellungen",
+    "CHIA": "Chia",
+    "FEE": "Gebühren",
+    "TEAM": "Team",
+    "FAQ": "FAQ",
+    "PARTIALS": "Partials",
+    "FARMER": "Farmer"
+  },
+  "TOPBAR": {
+    "JOIN_POOL": "Unserem Pool beitreten",
+    "LANGUAGE_ALT": "Kopfzeilensprache",
+    "USER_IMAGE_ALT": "Benutzerbild"
+  },
+  "COMMON": {
+    "DATE": "Datum",
+    "DATETIME": "Datum/Uhrzeit",
+    "AMOUNT": "Betrag",
+    "FEE": "Gebühr",
+    "STATUS": "Status",
+    "HEIGHT": "Höhe",
+    "UNKNOWN": "Unbekannt",
+    "CONFIRMED": "Bestätigt",
+    "PENDING": "Ausstehend",
+    "PRICE": "Preis",
+    "ID": "ID",
+    "NAME": "Name",
+    "VERSION": "Version",
+    "ADDRESS": "Adresse",
+    "SYNCED": "Synchronisiert",
+    "SYNCING": "Synchronisiere",
+    "NOT_SYNCED": "Nicht synchronisiert",
+    "YES": "Ja",
+    "NO": "Nein",
+    "SIZE": "Größe",
+    "POINTS": "Punkte",
+    "TRANSACTION": "Transaktion",
+    "AVAILABLE": "Verfügbar",
+    "LOADING": "Laden...",
+    "ONLINE": "Online",
+    "OFFLINE": "Offline",
+    "UNDEFINED": "Undefiniert",
+    "DIFFICULTY": "Schwierigkeit",
+    "ROLE": "Rolle",
+    "FINGERPRINT": "Fingerabdruck",
+    "LOCATION": "Standort",
+    "MEMPOOL": "Mempool",
+    "HARVESTER": "Harvester",
+    "PLOT_SIZE": "Plot-Größe",
+    "CHIA_VERSION": "Chia-Version",
+    "TIME_TAKEN": "Benötigte Zeit",
+    "STATE": "Zustand",
+    "BLOCKS": "Block(s)",
+    "AUTO": "(auto)",
+    "GIGAHORSE_TITLE": "Diese Belohnung wurde als Gebühr von Gigahorse einbehalten",
+    "PROGRESS": "Fortschritt",
+    "DAY": "Tag",
+    "DAYS": "Tage",
+    "CLOSE": "Schließen"
+  },
+  "CHART": {
+    "BLOCKS": "Block(s)",
+    "EFFORT": "Effort",
+    "DIFFICULTY": "Schwierigkeit",
+    "POINTS": "Punkte",
+    "SUCCESSFUL_PARTIALS": "Erfolgreiche Partials",
+    "FAILED_PARTIALS": "Fehlgeschlagene Partials",
+    "PARTIALS_TITLE": "Erfolgreiche & fehlgeschlagene Partials",
+    "PARTIAL_TIME_TAKEN": "Benötigte Partial-Zeit",
+    "AMOUNT_XCH": "Betrag (XCH)",
+    "SIZE_8H": "Größe (8h-Durchschnitt)",
+    "SIZE_24H": "Größe (24h-Durchschnitt)",
+    "VALID": "Gültig",
+    "TO_BE_VALIDATED": "Zu validieren",
+    "INVALID_REVERTED": "Ungültig / zurückgesetzt",
+    "DUPLICATE": "Duplikat"
+  },
+  "FEE": {
+    "TITLE": "Pool-Gebühr",
+    "DESC_1": "Derzeit erheben wir eine Gebühr von 0,75 %. Diese Gebühr wird von der Belohnung jedes Farmers abgezogen.",
+    "DESC_2": "Wenn der Farmer in einer bestimmten Runde beispielsweise einen Anteil von 0,05 XCH erhalten würde, würden 0,75 % davon (0,000375 XCH) als Pool-Gebühr einbehalten und der Rest (0,049625 XCH) dem Farmer gutgeschrieben."
+  },
+  "TEAM": {
+    "ROLE": "Inhaber & Fullstack-Entwickler",
+    "DJERFY_HANDLE": "🌱 DJΞRFY 🚀"
+  },
+  "POOL_LOGS": {
+    "SHOW_PARTIALS": "Partials-Logs anzeigen",
+    "SHOW_PAYMENTS": "Zahlungs-Logs anzeigen"
+  },
+  "JOIN": {
+    "LATENCY": "Latenz von {{name}} ({{url}})",
+    "REQUIREMENTS": "Anforderungen",
+    "REQ_CLIENT_PART1": "Stellen Sie sicher, dass Sie den offiziellen Chia-Client verwenden, der Pool-Plots unterstützt,",
+    "REQ_CLIENT_VERSION": "Version 2.7.0 oder höher",
+    "REQ_CLIENT_PART2": "Sie können",
+    "REQ_CLIENT_LINK": "die offizielle Chia-Anleitung hier ansehen",
+    "REQ_SYNC": "Vor dem Beitritt zum Pool müssen Ihr Node und Ihre Wallet vollständig mit der Chia-Blockchain synchronisiert sein.",
+    "REQ_MOJO": "Sie benötigen 1 Mojo (0,000000000001 XCH), das Sie über die offizielle Faucet-Website erhalten können:",
+    "POOL_ADDRESS": "Pool-Adresse",
+    "GLOBAL_SERVER": "Globaler Server:",
+    "JOIN_CLI": "Pool per CLI beitreten",
+    "CLI_WALLET_ID": "Ermitteln Sie Ihre Wallet-ID:",
+    "CLI_JOIN_PART1": "Beitritt",
+    "CLI_JOIN_PART2": "zum Pool mit:",
+    "CLI_CONFIRM_1": "Sie werden um Bestätigung gebeten; prüfen Sie alle Details und bestätigen Sie mit Y.",
+    "CLI_CONFIRM_2": "Warten Sie einige Minuten und genießen Sie! 🎉"
+  },
+  "REWARDS": {
+    "TOTAL_CLAIMED": "Gesamt beansprucht",
+    "TOTAL_DISTRIBUTED": "Gesamt verteilt",
+    "TOTAL_FEE": "Gesamtgebühr",
+    "CHART_TITLE": "Belohnungsdiagramm",
+    "TITLE": "Belohnungen"
+  },
+  "REWARD": {
+    "BLOCK_HEIGHT": "Blockhöhe",
+    "FARMERS_LIST": "Farmer-Liste",
+    "REWARD_ID": "Belohnungs-ID",
+    "LAUNCHER_ID": "Launcher-ID",
+    "POOL_FEE": "Pool-Gebühr"
+  },
+  "BLOCKS": {
+    "TOTAL_BLOCKS_FOUND": "Gefundene Blöcke gesamt",
+    "EST_TIME_PER_BLOCK": "Geschätzte Zeit pro Block",
+    "CURRENT_EFFORT": "Aktueller Effort",
+    "CHART_TITLE": "Block-Diagramme",
+    "BLOCKS_PER_DAY": "Blöcke pro Tag",
+    "BLOCKS_PER_EFFORT": "Blöcke pro Effort",
+    "TITLE_FOUND": "Gefundene Blöcke",
+    "FARMER": "Farmer",
+    "SINGLETON": "Singleton",
+    "POOL_REWARD": "Pool-Belohnung",
+    "POOL_SPACE": "Pool-Speicher",
+    "POOL_EFFORT": "Pool-Effort",
+    "LUCKY": "Glücklich",
+    "AVERAGE": "Durchschnitt",
+    "UNLUCKY": "Unglücklich"
+  },
+  "POOL_STATS": {
+    "POOL_SPACE_7D": "Pool-Speicher (7 Tage)",
+    "MEMPOOL_7D": "Mempool-Größe (7 Tage)",
+    "NETSPACE_7D": "Netspace-Größe (7 Tage)",
+    "XCH_PRICE_7D": "XCH-Preis (7 Tage)",
+    "PARTIALS_TOTAL": "Partials gesamt",
+    "VERSIONS": "Versionen",
+    "ERRORS": "Fehler",
+    "HOSTS": "Hosts"
+  },
+  "LOGIN": {
+    "AUTH_FAILED_TITLE": "Authentifizierung fehlgeschlagen!",
+    "AUTH_FAILED_DESC": "Authentifizierung fehlgeschlagen! Überprüfen Sie Ihre Login-URL und versuchen Sie es erneut.",
+    "GLOBAL": "Global",
+    "FARMER_NAME": "Farmer-Name",
+    "FARMER_EMAIL": "Farmer-E-Mail",
+    "FARMER_PICTURE": "Farmer-Bild",
+    "NOT_SET": "(nicht festgelegt)",
+    "MIN_PAYOUT": "Mindestauszahlung (XCH)",
+    "DIFF_LOWEST": "Niedrigste – Doppelte Menge der pro Tag gesendeten Partials",
+    "DIFF_LOW": "Niedrig – 50 % mehr Partials pro Tag",
+    "DIFF_MEDIUM": "Standard – Etwa 600 Partials pro Tag",
+    "DIFF_HIGH": "Hoch – 25 % weniger Partials pro Tag",
+    "DIFF_HIGHEST": "Höchste – 50 % weniger Partials pro Tag",
+    "DIFF_CUSTOM": "Benutzerdefiniert – Anzahl der pro Tag gesendeten Partials",
+    "DIFF_EXPERT": "Experte – Manuelle Schwierigkeit festlegen (Warnung)",
+    "HARVESTER_RENAME_PLACEHOLDER": "Harvester-Name eingeben",
+    "SAVE": "Einstellungen speichern",
+    "SAVE_ERROR": "In einem der Parameter ist ein Fehler aufgetreten. Bitte überprüfen Sie das Formular und versuchen Sie es erneut."
+  },
+  "POOL_STATUS": {
+    "BLOCKCHAIN_HEIGHT": "Blockchain-Höhe",
+    "POOL_SHARE": "Pool-Anteil",
+    "API_STATUS": "API-Status",
+    "HEALTHY": "Gesund",
+    "NODES_STATUS": "Node-Status",
+    "OK": "Ok",
+    "DEGRADED": "Eingeschränkt",
+    "CRITICAL": "Kritisch",
+    "WALLETS_STATUS": "Wallet-Status",
+    "UNHEALTHY": "Ungesund",
+    "POOL_WALLETS": "Pool-Wallets",
+    "POOL_NODES": "Pool-Nodes",
+    "MAINTENANCE": "Wartung",
+    "PRIMARY": "Primär",
+    "STANDBY": "Bereitschaft",
+    "UNAVAILABLE": "Nicht verfügbar",
+    "DUST_STORM": "Staubsturm erkannt:"
+  },
+  "FAQ": {
+    "P0_TITLE": "Was ist Pool.Energy?",
+    "P0_BODY": "Pool.Energy ist ein Chia-Farming-Pool. Gute Ausrüstung bringt Sie nur bis zu einem bestimmten Punkt. Sie mögen ein paar leistungsstarke HDD-Plotters betreiben, aber Sie bleiben dennoch nur ein Tropfen im Ozean des Chia-Farmings. Die Chancen, tatsächlich einen Block zu finden, sind recht gering, obwohl Sie viel Geld in Ihre Ausrüstung und den dafür benötigten Strom investiert haben. Es gibt keine Garantie, wann Sie eine Blockbelohnung erhalten oder ob Sie überhaupt eine erhalten. Wenn Sie ein festes Einkommen wünschen, sind Ihre Chancen in einem Chia-Farming-Pool deutlich höher.",
+    "P1_TITLE": "Wie hoch sind die Mindestzahlungen?",
+    "P1_BODY": "Pool.Energy hat keine Mindestzahlung für Auszahlungen. Jede Parzelle und jeder Farmer ist für uns wertvoll. Sie können ohne Rücksicht auf Ihre Farmgröße beitreten.",
+    "P2_TITLE": "Chia-Client-Version?",
+    "P2_BODY": "Seit dem 30. April 2026 unterstützt Pool.Energy nur noch Chia v2.7.0 oder höher. Farmer mit Chia vor v2.7.0 können keine Blöcke erstellen. Der Pool lehnt alle Partials von älteren Versionen ab!",
+    "P3_TITLE": "Wie werden Pool-Belohnungen berechnet?",
+    "P3_BODY_1": "Wir verwenden",
+    "P3_PPLNS": "PPLNS (Pay Per Last N Shares)",
+    "P3_BODY_2": "für die Belohnungen der Chia-Farmer. Wenn ein Farmer einen Block findet, erhält jeder Farmer den Anteil an den letzten 24 Stunden der an den Pool gesendeten Partials. Auszahlungen erfolgen innerhalb einer Stunde, wenn ein Block von unseren Farmern gefunden wird. Der Zeitpunkt kann sich wegen eines Staubsturms ändern, aber wir speichern kein Chia in unserer Pool-Wallet. Sie können unsere Adresse gerne im Bereich Pool-Status überprüfen.",
+    "P4_TITLE": "Wie ändere ich die Farmer-Einstellungen?",
+    "P4_BODY_1": "Die Launcher-ID identifiziert einen Farmer für jede NFT-Parzelle. Sie ist eine lange hexadezimale Zeichenfolge und nicht benutzerfreundlich. Zur einfacheren Identifikation in unserem Pool erlauben wir Benutzern, im Dashboard einen freundlichen Namen festzulegen, einen Alias für Ihre Launcher-ID.",
+    "P4_BODY_2": "Auf der Einstellungsseite können Sie Ihren Alias, Ihr Profilbild, Ihre E-Mail (Benachrichtigungen), Ihre Mindestauszahlung und Ihre Schwierigkeit ändern.",
+    "P4_IMG_ALT": "Farmer-Einstellungen",
+    "P5_TITLE": "Wie logge ich mich ein (CLI)?",
+    "P5_BODY_1": "Holen Sie sich Ihre Launcher-ID:",
+    "P5_BODY_2": "Mit Ihrer Launcher-ID erhalten Sie den Link:",
+    "P6_TITLE": "Wie logge ich mich ein (GUI)?",
+    "P6_BODY_1": "Öffnen Sie die Chia-GUI und Pooling (1) und wählen Sie unseren Pool mit https://chia.pool.energy (2).",
+    "P6_BODY_2": "Klicken Sie auf das 3-Punkte-Menü (3) und dann auf View Pool Login Link (4).",
+    "P6_IMG_ALT": "GUI-Anmeldung",
+    "P7_TITLE": "Wie lege ich eine benutzerdefinierte Schwierigkeit fest?",
+    "P7_BODY_1": "Unser Pool passt die Schwierigkeit anhand der Anzahl der eingereichten Partials an. So funktioniert es:",
+    "P7_BODY_2": "Zuerst legen wir eine Zielanzahl von Partials basierend auf der gewählten Schwierigkeit fest. Die Schwierigkeitsoptionen sind LOWEST, LOW, MEDIUM, HIGH und HIGHEST. Sie können auch die Schwierigkeit CUSTOM mit einem eigenen Wert wählen, wenn Sie Gigahorse verwenden.",
+    "P7_BODY_3": "Der Wert ist Ihre eigene Zielanzahl an pro Tag gesendeten Partials. Zum Beispiel setzt 100 die Zielanzahl auf 100 Partials. Sie sollten anstreben, ungefähr diese Anzahl zu senden. Wenn Sie deutlich weniger oder mehr senden, passt das System die benötigte Zeit entsprechend an.",
+    "P7_BODY_4": "- Wenn die Anzahl der letzten Partials unter der Zielanzahl liegt und die benötigte Zeit unter 80 % der Zielzeit liegt, wird die aktuelle Schwierigkeit unverändert zurückgegeben.",
+    "P7_BODY_5": "- Wenn die Anzahl der letzten Partials unter der Zielanzahl liegt, wird die benötigte Zeit angepasst, indem sie mit dem Verhältnis von Zielanzahl zu Anzahl der letzten Partials multipliziert wird.",
+    "P7_BODY_6": "- Wenn die Anzahl der letzten Partials über 150 % der Zielanzahl liegt, wird die benötigte Zeit ebenfalls verringert, sodass es aussieht, als hätten Sie weniger gesendet.",
+    "P7_BODY_7": "Schließlich wird die neue Schwierigkeit berechnet, indem die aktuelle Schwierigkeit mit dem Verhältnis von Zielzeit zu benötigter Zeit multipliziert wird; zurückgegeben wird der größere Wert zwischen Schwierigkeit und neuer Schwierigkeit."
+  }
+}

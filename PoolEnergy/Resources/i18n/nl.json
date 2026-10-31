@@ -1,0 +1,428 @@
+{
+  "MENUITEMS": {
+    "MENU": {
+      "TEXT": "Menu"
+    },
+    "DASHBOARD": {
+      "TEXT": "Dashboards"
+    },
+    "FARMERS": {
+      "TEXT": "Farmers"
+    },
+    "BLOCKS": {
+      "TEXT": "Blokken"
+    },
+    "REWARDS": {
+      "TEXT": "Beloningen"
+    },
+    "PARTIALS": {
+      "TEXT": "Partials"
+    },
+    "CHIA": {
+      "TEXT": "Chia",
+      "LIST": {
+        "BLOCKCHAIN_STATE": "Blockchainstatus",
+        "ECOSYSTEM_ACT": "Ecosysteemactiviteit",
+        "MEMPOOL_TXS_FEES": "Mempool, txs & vergoedingen",
+        "NAKAMOTO_COEF": "Nakamoto-coëfficiënt",
+        "PEER_INFO": "Peer-informatie"
+      }
+    },
+    "POOL": {
+      "TEXT": "Pool",
+      "LIST": {
+        "STATUS": "Status",
+        "STATS": "Statistieken",
+        "LOGS": "Logs"
+      }
+    },
+    "API": {
+      "TEXT": "API",
+      "LIST": {
+        "SWAGGER": "Swagger",
+        "REDOC": "Redoc",
+        "BROWSER": "Browser"
+      }
+    },
+    "INFO": {
+      "TEXT": "Info",
+      "LIST": {
+        "FAQ": "FAQ",
+        "FEE": "Vergoeding",
+        "TEAM": "Team",
+        "GITHUB": "Github"
+      }
+    },
+    "CONTACT": {
+      "TEXT": "Contact",
+      "LIST": {
+        "TELEGRAM": "Telegram",
+        "BLUESKY": "Bluesky",
+        "XING": "X",
+        "REDDIT": "Reddit",
+        "YOUTUBE": "Youtube",
+        "FACEBOOK": "Facebook",
+        "DISCORD": "Discord",
+        "GITHUB": "Github"
+      }
+    }
+  },
+  "FARMERS": {
+    "STATS": {
+      "DUST_STORM": "Stofstorm gedetecteerd:",
+      "POOL_SPACE": "Poolruimte",
+      "ACTIVE_TOTAL_FARMERS": "Actieve / totale farmers",
+      "EFFORT": "Inspanning huidig / gemiddeld",
+      "ESTIMATE_TO_WIN": "Geschatte tijd om te winnen",
+      "CURRENT_FEE": "Huidige vergoeding",
+      "XCH_PRICE": "XCH-prijs",
+      "INFO": "Informatie",
+      "CHIA_DOC": "Chia-blockchaindocumentatie",
+      "DUST_STORM_DESC": "de Chia-mempool is momenteel erg overbelast ({{pct}}% vol).",
+      "DUST_STORM_DELAY": "Transactiekosten kunnen tijdelijk vereist zijn en het moment van uitbetalingen/absorptie kan vertraagd worden.",
+      "HALVING_CURRENT": "Huidig blok: {{block}}. Volgend halveringsblok: {{next}}.",
+      "HALVING_PROGRESS": "Voortgang:",
+      "HALVING_VISIT": "Bezoek voor meer details"
+    },
+    "LEADERBOARD": {
+      "TITLE": "Klassement"
+    },
+    "LIST": {
+      "TITLE": "Farmerslijst",
+      "ALL": "Alle farmers",
+      "LAUNCHER_ID": "Launcher-ID",
+      "SINGLETON_PUZZLE_HASH": "Singleton-puzzelhash",
+      "POINTS": "Punten (24 uur)",
+      "DIFFICULTY": "Moeilijkheid",
+      "UTILIZATION_SPACE": "Benuttingsruimte",
+      "ESTIMATED_SPACE": "Geschatte ruimte",
+      "SEARCH_PLACEHOLDER": "Farmers zoeken",
+      "WON_LAST_BLOCK": "Heeft het laatste blok gewonnen"
+    }
+  },
+  "FARMER": {
+    "STATS": {
+      "OFFLINE": "Offline (geen partials)",
+      "ONLINE": "Online",
+      "OFFLINE_LEFT": "Offline (pool verlaten)",
+      "ESTIMATED_SIZE": "Geschatte grootte",
+      "UTILIZATION_SPACE": "Benuttingsruimte",
+      "NO_DATA": "Geen gegevens gevonden."
+    },
+    "TABS": {
+      "OVERVIEW": "Overzicht",
+      "JOINED_AT": "Toegetreden op",
+      "POINTS": "Punten (PPLNS)",
+      "DIFFICULTY": "Moeilijkheid",
+      "ESTIMATE_TO_WIN": "Geschatte tijd om te winnen (ETW)",
+      "CURRENT_EFFORT": "Huidige inspanning",
+      "DIFFICULTY_POINTS": "Moeilijkheid & punten",
+      "PARTIALS": "Partials",
+      "PARTIALS_24H": "Partials (24u)",
+      "POINTS_24H": "Punten (24u)",
+      "HARVESTER": "Harvester(s)",
+      "HARVESTERS": "Harvesters",
+      "SUCCESSFUL_PARTIALS": "Geslaagde partials",
+      "FAILED_PARTIALS": "Mislukte partials",
+      "PERFORMANCE": "Prestatie",
+      "SHOW_PARTIALS_FAILED_ONLY": "Alleen mislukte partials tonen",
+      "SHOW_PARTIALS_TOO_LATE_ONLY": "Alleen te late partials tonen",
+      "BLOCKS": "Blokken",
+      "REWARDS": "Beloningen",
+      "PAYOUTS": "Uitbetalingen",
+      "LOGS": "Logs",
+      "NO_PARTIAL": "Geen partial gevonden.",
+      "PARTIALS_LABEL": "Partials:",
+      "PLOT_FILENAME": "Plotbestandsnaam",
+      "SUCCESS": "SUCCES",
+      "NO_HARVESTER": "Geen harvester gevonden.",
+      "TOTAL_POINTS": "Totaal punten",
+      "PARTIALS_SUCCESSFUL": "Geslaagde partials",
+      "PARTIALS_FAILED": "Mislukte partials",
+      "TOTAL_BLOCKS": "Totaal blokken",
+      "AVERAGE_EFFORT": "Gemiddelde inspanning",
+      "EST_TIME_PER_BLOCK": "Geschatte tijd per blok",
+      "NO_BLOCK": "Geen blok gevonden.",
+      "POOL_SIZE": "Poolgrootte",
+      "LAST_24_HOURS": "Laatste 24 uur",
+      "TODAY": "Vandaag",
+      "YESTERDAY": "Gisteren",
+      "LAST_7_DAYS": "Laatste 7 dagen",
+      "LAST_30_DAYS": "Laatste 30 dagen",
+      "PAID": "Betaald",
+      "PAYOUT_PROGRESS": "In uitvoering",
+      "NO_REWARD": "Geen beloning gevonden.",
+      "TOTAL_TRANSACTIONS": "Totaal transactie(s)",
+      "TOTAL_PAID": "Totaal betaald",
+      "TOTAL_UNPAID": "Totaal onbetaald",
+      "NO_PAYOUT": "Geen uitbetaling gevonden.",
+      "CONFIRMED_BLOCK": "Bevestigd blok",
+      "DOWNLOAD_CSV": "CSV downloaden",
+      "CRITICAL_TITLE": "Kritiek:",
+      "CRITICAL_MSG": "Versie {{version}} wordt niet ondersteund door de pool. Upgrade uw harvester naar de nieuwste versie. Minimale versie {{min}} is vereist; momenteel worden uw partials niet geaccepteerd.",
+      "WARNING_TITLE": "Waarschuwing:",
+      "WARNING_MSG": "Versie {{version}} wordt ondersteund door de pool, maar upgrade uw harvester indien mogelijk naar de nieuwste versie."
+    }
+  },
+  "PARTIALS": {
+    "OVERVIEW": {
+      "TITLE": "Partials-overzicht (alle farmers)"
+    },
+    "BUTTONS": {
+      "TOTAL_RECEIVED": "partials",
+      "TOTAL_BLOCKS": "blokken",
+      "RESUME": "Hervatten",
+      "PAUSE": "Pauze",
+      "CLEAR": "Wissen"
+    },
+    "LIST": {
+      "TIME": "Tijd",
+      "SIGNAGE_POINT": "Signagepunt",
+      "TO_BE_VALIDATED": "Te valideren",
+      "VALID": "Geldig",
+      "STALE": "Verouderd",
+      "DUPLICATE": "Duplicaat",
+      "INVALID": "Ongeldig",
+      "BLOCKS_FOUND": "Gevonden blokken",
+      "ACTIVITY": "Live-activiteit (laatste {{hours}}u)",
+      "FARMER": "Farmer",
+      "PLOT_ID": "Plot-ID",
+      "CHIA_VERSION": "Chia-versie",
+      "RESOLVED_IN": "Opgelost in",
+      "NO_PARTIAL_RETAINED": "Geen partial bewaard voor dit signagepunt.",
+      "SHOWING_200": "De meest recente 200 partials voor dit signagepunt worden getoond — oudere zijn uit deze liveweergave verwijderd.",
+      "WAITING": "Wachten op live partials...",
+      "MATCHED_TOOLTIP": "Gematched op dichtstbijzijnde tijdstempel, binnen 2 minuten"
+    }
+  },
+  "BREADCRUMBS": {
+    "HOME": "Home",
+    "INFO": "Info",
+    "FARMERS": "Farmers",
+    "DETAILS": "Details",
+    "REWARDS": "Beloningen",
+    "BLOCKS": "Blokken",
+    "POOL": "Pool",
+    "STATUS": "Status",
+    "STATS": "Statistieken",
+    "LOGS": "Logs",
+    "JOIN": "Deelnemen",
+    "SETTINGS": "Instellingen",
+    "CHIA": "Chia",
+    "FEE": "Vergoeding",
+    "TEAM": "Team",
+    "FAQ": "FAQ",
+    "PARTIALS": "Partials",
+    "FARMER": "Farmer"
+  },
+  "TOPBAR": {
+    "JOIN_POOL": "Word lid van onze pool",
+    "LANGUAGE_ALT": "Taal van de koptekst",
+    "USER_IMAGE_ALT": "Gebruikersafbeelding"
+  },
+  "COMMON": {
+    "DATE": "Datum",
+    "DATETIME": "Datum en tijd",
+    "AMOUNT": "Bedrag",
+    "FEE": "Vergoeding",
+    "STATUS": "Status",
+    "HEIGHT": "Hoogte",
+    "UNKNOWN": "Onbekend",
+    "CONFIRMED": "Bevestigd",
+    "PENDING": "In behandeling",
+    "PRICE": "Prijs",
+    "ID": "ID",
+    "NAME": "Naam",
+    "VERSION": "Versie",
+    "ADDRESS": "Adres",
+    "SYNCED": "Gesynchroniseerd",
+    "SYNCING": "Synchroniseren",
+    "NOT_SYNCED": "Niet gesynchroniseerd",
+    "YES": "Ja",
+    "NO": "Nee",
+    "SIZE": "Grootte",
+    "POINTS": "Punten",
+    "TRANSACTION": "Transactie",
+    "AVAILABLE": "Beschikbaar",
+    "LOADING": "Laden...",
+    "ONLINE": "Online",
+    "OFFLINE": "Offline",
+    "UNDEFINED": "Ongedefinieerd",
+    "DIFFICULTY": "Moeilijkheid",
+    "ROLE": "Rol",
+    "FINGERPRINT": "Vingerafdruk",
+    "LOCATION": "Locatie",
+    "MEMPOOL": "Mempool",
+    "HARVESTER": "Harvester",
+    "PLOT_SIZE": "Plotgrootte",
+    "CHIA_VERSION": "Chia-versie",
+    "TIME_TAKEN": "Gebruikte tijd",
+    "STATE": "Status",
+    "BLOCKS": "Blok(ken)",
+    "AUTO": "(auto)",
+    "GIGAHORSE_TITLE": "Deze beloning is als vergoeding door Gigahorse ingehouden",
+    "PROGRESS": "Voortgang",
+    "DAY": "dag",
+    "DAYS": "dagen",
+    "CLOSE": "Sluiten"
+  },
+  "CHART": {
+    "BLOCKS": "Blok(ken)",
+    "EFFORT": "Inspanning",
+    "DIFFICULTY": "Moeilijkheid",
+    "POINTS": "Punten",
+    "SUCCESSFUL_PARTIALS": "Geslaagde partials",
+    "FAILED_PARTIALS": "Mislukte partials",
+    "PARTIALS_TITLE": "Geslaagde & mislukte partials",
+    "PARTIAL_TIME_TAKEN": "Tijd genomen per partial",
+    "AMOUNT_XCH": "Bedrag (XCH)",
+    "SIZE_8H": "Grootte (8u-gemiddelde)",
+    "SIZE_24H": "Grootte (24u-gemiddelde)",
+    "VALID": "Geldig",
+    "TO_BE_VALIDATED": "Te valideren",
+    "INVALID_REVERTED": "Ongeldig / teruggedraaid",
+    "DUPLICATE": "Duplicaat"
+  },
+  "FEE": {
+    "TITLE": "Poolvergoeding",
+    "DESC_1": "Momenteel rekenen we een vergoeding van 0,75%. Die vergoeding wordt afgetrokken van de beloning van elke farmer.",
+    "DESC_2": "Als de farmer in een bepaalde ronde bijvoorbeeld recht heeft op een aandeel van 0,05 XCH, dan wordt 0,75% daarvan (0,000375 XCH) ingehouden als poolvergoeding en wordt de rest (0,049625 XCH) aan de farmer bijgeschreven."
+  },
+  "TEAM": {
+    "ROLE": "Eigenaar & fullstackontwikkelaar",
+    "DJERFY_HANDLE": "🌱 DJΞRFY 🚀"
+  },
+  "POOL_LOGS": {
+    "SHOW_PARTIALS": "Partial-logs tonen",
+    "SHOW_PAYMENTS": "Betaling-logs tonen"
+  },
+  "JOIN": {
+    "LATENCY": "Latentie vanaf {{name}} ({{url}})",
+    "REQUIREMENTS": "Vereisten",
+    "REQ_CLIENT_PART1": "Zorg ervoor dat u de officiële Chia-client gebruikt die poolplots ondersteunt,",
+    "REQ_CLIENT_VERSION": "versie 2.7.0 of later",
+    "REQ_CLIENT_PART2": "U kunt",
+    "REQ_CLIENT_LINK": "de officiële Chia-instructies hier bekijken",
+    "REQ_SYNC": "Voordat u lid wordt van de pool, moeten uw node en wallet volledig zijn gesynchroniseerd met de Chia-blockchain.",
+    "REQ_MOJO": "U hebt 1 Mojo (0,000000000001 XCH) nodig, dat u kunt verkrijgen via de officiële Faucet-website:",
+    "POOL_ADDRESS": "Pooladres",
+    "GLOBAL_SERVER": "Globale server:",
+    "JOIN_CLI": "Word lid van de pool via CLI",
+    "CLI_WALLET_ID": "Haal uw wallet-ID op:",
+    "CLI_JOIN_PART1": "Deelnemen",
+    "CLI_JOIN_PART2": "aan de pool met:",
+    "CLI_CONFIRM_1": "Er wordt om uw bevestiging gevraagd; controleer alle details en bevestig met Y.",
+    "CLI_CONFIRM_2": "Wacht een paar minuten en geniet! 🎉"
+  },
+  "REWARDS": {
+    "TOTAL_CLAIMED": "Totaal opgeëist",
+    "TOTAL_DISTRIBUTED": "Totaal uitgekeerd",
+    "TOTAL_FEE": "Totale vergoeding",
+    "CHART_TITLE": "Beloningenkaart",
+    "TITLE": "Beloningen"
+  },
+  "REWARD": {
+    "BLOCK_HEIGHT": "Blokhoogte",
+    "FARMERS_LIST": "Farmerslijst",
+    "REWARD_ID": "Belonings-ID",
+    "LAUNCHER_ID": "Launcher-ID",
+    "POOL_FEE": "Poolvergoeding"
+  },
+  "BLOCKS": {
+    "TOTAL_BLOCKS_FOUND": "Totaal gevonden blokken",
+    "EST_TIME_PER_BLOCK": "Geschatte tijd per blok",
+    "CURRENT_EFFORT": "Huidige inspanning",
+    "CHART_TITLE": "Blokdiagrammen",
+    "BLOCKS_PER_DAY": "Blokken per dag",
+    "BLOCKS_PER_EFFORT": "Blokken per inspanning",
+    "TITLE_FOUND": "Gevonden blokken",
+    "FARMER": "Farmer",
+    "SINGLETON": "Singleton",
+    "POOL_REWARD": "Poolbeloning",
+    "POOL_SPACE": "Poolruimte",
+    "POOL_EFFORT": "Poolinspanning",
+    "LUCKY": "Gelukkig",
+    "AVERAGE": "Gemiddeld",
+    "UNLUCKY": "Ongelukkig"
+  },
+  "POOL_STATS": {
+    "POOL_SPACE_7D": "Poolruimte (7 dagen)",
+    "MEMPOOL_7D": "Mempoolgrootte (7 dagen)",
+    "NETSPACE_7D": "Netspacegrootte (7 dagen)",
+    "XCH_PRICE_7D": "XCH-prijs (7 dagen)",
+    "PARTIALS_TOTAL": "Totaal partials",
+    "VERSIONS": "Versies",
+    "ERRORS": "Fouten",
+    "HOSTS": "Hosts"
+  },
+  "LOGIN": {
+    "AUTH_FAILED_TITLE": "Authenticatiefout!",
+    "AUTH_FAILED_DESC": "Authenticatiefout! Controleer uw aanmeldings-URL en probeer het opnieuw.",
+    "GLOBAL": "Globaal",
+    "FARMER_NAME": "Farmernaam",
+    "FARMER_EMAIL": "Farmer-e-mail",
+    "FARMER_PICTURE": "Farmerafbeelding",
+    "NOT_SET": "(niet ingesteld)",
+    "MIN_PAYOUT": "Minimumuitbetaling (XCH)",
+    "DIFF_LOWEST": "Laagste – dubbele hoeveelheid partials per dag verzonden",
+    "DIFF_LOW": "Laag – 50% meer partials per dag verzonden",
+    "DIFF_MEDIUM": "Standaard – ongeveer 600 partials per dag verzonden",
+    "DIFF_HIGH": "Hoog – 25% minder partials per dag verzonden",
+    "DIFF_HIGHEST": "Hoogste – 50% minder partials per dag verzonden",
+    "DIFF_CUSTOM": "Aangepast – aantal partials per dag verzonden",
+    "DIFF_EXPERT": "Expert – handmatige moeilijkheid instellen (waarschuwing)",
+    "HARVESTER_RENAME_PLACEHOLDER": "Voer harvesternaam in",
+    "SAVE": "Instellingen opslaan",
+    "SAVE_ERROR": "Er is een fout opgetreden in een van de parameters. Controleer het formulier en probeer het opnieuw."
+  },
+  "POOL_STATUS": {
+    "BLOCKCHAIN_HEIGHT": "Blockchainhoogte",
+    "POOL_SHARE": "Poolaandeel",
+    "API_STATUS": "API-status",
+    "HEALTHY": "Gezond",
+    "NODES_STATUS": "Nodestatus",
+    "OK": "Ok",
+    "DEGRADED": "Verminderd",
+    "CRITICAL": "Kritiek",
+    "WALLETS_STATUS": "Walletstatus",
+    "UNHEALTHY": "Ongezond",
+    "POOL_WALLETS": "Pool-wallets",
+    "POOL_NODES": "Pool-nodes",
+    "MAINTENANCE": "Onderhoud",
+    "PRIMARY": "Primair",
+    "STANDBY": "Standby",
+    "UNAVAILABLE": "Niet beschikbaar",
+    "DUST_STORM": "Stofstorm gedetecteerd:"
+  },
+  "FAQ": {
+    "P0_TITLE": "Wat is Pool.Energy?",
+    "P0_BODY": "Pool.Energy is een Chia-farmingpool. Goede apparatuur brengt je maar tot op zekere hoogte. Je draait misschien een paar krachtige hdd-plotters, maar je blijft slechts een druppel in de oceaan van het Chia-farming. De kans dat je daadwerkelijk een blok kunt delven is vrij klein, ondanks het feit dat je grote bedragen hebt besteed aan je apparatuur en de elektriciteit die nodig is om deze te laten draaien. Er is geen garantie wanneer je een blokbeloningsbetaling ontvangt of dat je die betaling überhaupt zult ontvangen. Als je een vast inkomen wilt, zijn je kansen veel hoger in een Chia-farmingpool.",
+    "P1_TITLE": "Wat zijn de minimumbetalingen?",
+    "P1_BODY": "Pool.Energy heeft geen minimumbetaling voor uitbetalingen. Elke plot en elke farmer is waardevol voor ons. Je kunt vrij deelnemen zonder na te denken over de grootte van je farm.",
+    "P2_TITLE": "Chia-clientversie?",
+    "P2_BODY": "Sinds 30 april 2026 ondersteunt Pool.Energy alleen Chia v2.7.0 of hoger. Farmers die Chia vóór v2.7.0 gebruiken, kunnen geen blokken maken. De pool weigert alle partials van oudere versies!",
+    "P3_TITLE": "Hoe worden poolbeloningen berekend?",
+    "P3_BODY_1": "We gebruiken",
+    "P3_PPLNS": "PPLNS (Pay Per Last N Shares)",
+    "P3_BODY_2": "voor de beloningen van de Chia-farmers. Wanneer een farmer een blok vindt, verdient elke farmer het aandeel van de laatste 24 uur aan partials die naar de pool zijn gestuurd. Uitbetalingen vinden binnen een uur plaats wanneer een blok door onze farmers wordt gevonden. Het tijdstip kan veranderen door een stofstorm, maar we bewaren geen chia in onze poolwallet. Controleer gerust ons adres in de sectie poolstatus.",
+    "P4_TITLE": "Hoe verander ik de farmer-instellingen?",
+    "P4_BODY_1": "Launcher-ID is hoe een farmer wordt geïdentificeerd voor elke NFT-plot. Het is een lange hexadecimale reeks en niet gebruiksvriendelijk. Voor eenvoudigere identificatie in onze pool geven we gebruikers de mogelijkheid om in het dashboard een vriendelijke naam in te stellen, een alias voor je launcher-ID.",
+    "P4_BODY_2": "Op de instellingenpagina kun je je alias, profielfoto, e-mail (meldingen), minimumuitbetaling en moeilijkheid wijzigen.",
+    "P4_IMG_ALT": "farmer-instellingen",
+    "P5_TITLE": "Hoe inloggen (CLI)?",
+    "P5_BODY_1": "Haal je launcher-ID op:",
+    "P5_BODY_2": "Met je launcher-ID krijg je de link:",
+    "P6_TITLE": "Hoe inloggen (GUI)?",
+    "P6_BODY_1": "Open de Chia-GUI en Pooling (1) en selecteer onze pool met https://chia.pool.energy (2).",
+    "P6_BODY_2": "Klik op het 3-puntenmenu (3) en vervolgens op View Pool Login Link (4).",
+    "P6_IMG_ALT": "inloggen gui",
+    "P7_TITLE": "Hoe stel ik een aangepaste moeilijkheid in?",
+    "P7_BODY_1": "Onze pool past de moeilijkheid aan op basis van het aantal partials dat je indient. Zo werkt het:",
+    "P7_BODY_2": "Eerst stellen we een doel aantal partials in op basis van de moeilijkheid die je koos. De moeilijkheidsopties zijn LOWEST, LOW, MEDIUM, HIGH en HIGHEST. Je kunt ook de CUSTOM-moeilijkheid selecteren met een aangepaste waarde als je Gigahorse hebt.",
+    "P7_BODY_3": "De waarde is je eigen doel aantal partials dat per dag wordt verzonden. Bijvoorbeeld 100 stelt het doel aantal in op 100. Je moet ernaar streven ongeveer dit aantal partials te verzenden. Als je veel minder of veel meer verzendt, past het systeem de gebruikte tijd dienovereenkomstig aan.",
+    "P7_BODY_4": "- Als het aantal recente partials lager is dan het doel aantal en de gebruikte tijd lager is dan 80% van de doeltijd, wordt de huidige moeilijkheid ongewijzigd geretourneerd.",
+    "P7_BODY_5": "- Als het aantal recente partials lager is dan het doel aantal, wordt de gebruikte tijd aangepast door deze te vermenigvuldigen met de verhouding tussen het doel aantal en het aantal recente partials.",
+    "P7_BODY_6": "- Als het aantal recente partials groter is dan 150% van het doel aantal, wordt de gebruikte tijd ook aangepast door deze te verlagen, zodat het lijkt alsof je er minder hebt verzonden.",
+    "P7_BODY_7": "Ten slotte wordt de nieuwe moeilijkheid berekend door de huidige moeilijkheid te vermenigvuldigen met de verhouding tussen de doeltijd en de gebruikte tijd, en wordt de hoogste waarde tussen de moeilijkheid en de nieuwe moeilijkheid geretourneerd."
+  }
+}

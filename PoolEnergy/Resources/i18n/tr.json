@@ -1,0 +1,428 @@
+{
+  "MENUITEMS": {
+    "MENU": {
+      "TEXT": "Menü"
+    },
+    "DASHBOARD": {
+      "TEXT": "Panolar"
+    },
+    "FARMERS": {
+      "TEXT": "Çiftçiler"
+    },
+    "BLOCKS": {
+      "TEXT": "Bloklar"
+    },
+    "REWARDS": {
+      "TEXT": "Ödüller"
+    },
+    "PARTIALS": {
+      "TEXT": "Partials"
+    },
+    "CHIA": {
+      "TEXT": "Chia",
+      "LIST": {
+        "BLOCKCHAIN_STATE": "Blockchain durumu",
+        "ECOSYSTEM_ACT": "Ekosistem etkinliği",
+        "MEMPOOL_TXS_FEES": "Mempool, işlemler ve ücretler",
+        "NAKAMOTO_COEF": "Nakamoto katsayısı",
+        "PEER_INFO": "Eş bilgisi"
+      }
+    },
+    "POOL": {
+      "TEXT": "Havuz",
+      "LIST": {
+        "STATUS": "Durum",
+        "STATS": "İstatistikler",
+        "LOGS": "Günlükler"
+      }
+    },
+    "API": {
+      "TEXT": "API",
+      "LIST": {
+        "SWAGGER": "Swagger",
+        "REDOC": "Redoc",
+        "BROWSER": "Tarayıcı"
+      }
+    },
+    "INFO": {
+      "TEXT": "Bilgi",
+      "LIST": {
+        "FAQ": "SSS",
+        "FEE": "Ücret",
+        "TEAM": "Ekip",
+        "GITHUB": "Github"
+      }
+    },
+    "CONTACT": {
+      "TEXT": "İletişim",
+      "LIST": {
+        "TELEGRAM": "Telegram",
+        "BLUESKY": "Bluesky",
+        "XING": "X",
+        "REDDIT": "Reddit",
+        "YOUTUBE": "Youtube",
+        "FACEBOOK": "Facebook",
+        "DISCORD": "Discord",
+        "GITHUB": "Github"
+      }
+    }
+  },
+  "FARMERS": {
+    "STATS": {
+      "DUST_STORM": "Toz fırtınası tespit edildi:",
+      "POOL_SPACE": "Havuz alanı",
+      "ACTIVE_TOTAL_FARMERS": "Aktif / toplam çiftçiler",
+      "EFFORT": "Mevcut / ortalama efor",
+      "ESTIMATE_TO_WIN": "Kazanmak için tahmini süre",
+      "CURRENT_FEE": "Güncel ücret",
+      "XCH_PRICE": "XCH fiyatı",
+      "INFO": "Bilgi",
+      "CHIA_DOC": "Chia blockchain dokümantasyonu",
+      "DUST_STORM_DESC": "Chia mempool'u şu anda çok yoğun ({{pct}}% dolu).",
+      "DUST_STORM_DELAY": "Geçici olarak işlem ücreti gerekebilir ve ödeme/absorbsiyon zamanlaması gecikebilir.",
+      "HALVING_CURRENT": "Güncel blok: {{block}}. Sonraki yarılanma bloğu: {{next}}.",
+      "HALVING_PROGRESS": "İlerleme:",
+      "HALVING_VISIT": "Daha fazla ayrıntı için lütfen ziyaret edin"
+    },
+    "LEADERBOARD": {
+      "TITLE": "Sıralama"
+    },
+    "LIST": {
+      "TITLE": "Çiftçi listesi",
+      "ALL": "Tüm çiftçiler",
+      "LAUNCHER_ID": "Launcher kimliği",
+      "SINGLETON_PUZZLE_HASH": "Singleton puzzle karması",
+      "POINTS": "Puanlar (24 saat)",
+      "DIFFICULTY": "Zorluk",
+      "UTILIZATION_SPACE": "Kullanım alanı",
+      "ESTIMATED_SPACE": "Tahmini alan",
+      "SEARCH_PLACEHOLDER": "Çiftçi ara",
+      "WON_LAST_BLOCK": "Son bloğu kazandı"
+    }
+  },
+  "FARMER": {
+    "STATS": {
+      "OFFLINE": "Çevrimdışı (partial yok)",
+      "ONLINE": "Çevrimiçi",
+      "OFFLINE_LEFT": "Çevrimdışı (havuzdan ayrıldı)",
+      "ESTIMATED_SIZE": "Tahmini boyut",
+      "UTILIZATION_SPACE": "Kullanım alanı",
+      "NO_DATA": "Veri bulunamadı."
+    },
+    "TABS": {
+      "OVERVIEW": "Genel bakış",
+      "JOINED_AT": "Katılma tarihi",
+      "POINTS": "Puanlar (PPLNS)",
+      "DIFFICULTY": "Zorluk",
+      "ESTIMATE_TO_WIN": "Kazanmak için tahmini süre (ETW)",
+      "CURRENT_EFFORT": "Güncel efor",
+      "DIFFICULTY_POINTS": "Zorluk ve puanlar",
+      "PARTIALS": "Partials",
+      "PARTIALS_24H": "Partials (24s)",
+      "POINTS_24H": "Puanlar (24s)",
+      "HARVESTER": "Harvester(lar)",
+      "HARVESTERS": "Harvester'lar",
+      "SUCCESSFUL_PARTIALS": "Başarılı partials",
+      "FAILED_PARTIALS": "Başarısız partials",
+      "PERFORMANCE": "Performans",
+      "SHOW_PARTIALS_FAILED_ONLY": "Sadece başarısız partials'leri göster",
+      "SHOW_PARTIALS_TOO_LATE_ONLY": "Sadece çok geç partials'leri göster",
+      "BLOCKS": "Bloklar",
+      "REWARDS": "Ödüller",
+      "PAYOUTS": "Ödemeler",
+      "LOGS": "Günlükler",
+      "NO_PARTIAL": "Partial bulunamadı.",
+      "PARTIALS_LABEL": "Partials:",
+      "PLOT_FILENAME": "Plot dosya adı",
+      "SUCCESS": "BAŞARILI",
+      "NO_HARVESTER": "Harvester bulunamadı.",
+      "TOTAL_POINTS": "Toplam puanlar",
+      "PARTIALS_SUCCESSFUL": "Başarılı partials",
+      "PARTIALS_FAILED": "Başarısız partials",
+      "TOTAL_BLOCKS": "Toplam bloklar",
+      "AVERAGE_EFFORT": "Ortalama efor",
+      "EST_TIME_PER_BLOCK": "Blok başına tahmini süre",
+      "NO_BLOCK": "Blok bulunamadı.",
+      "POOL_SIZE": "Havuz boyutu",
+      "LAST_24_HOURS": "Son 24 saat",
+      "TODAY": "Bugün",
+      "YESTERDAY": "Dün",
+      "LAST_7_DAYS": "Son 7 gün",
+      "LAST_30_DAYS": "Son 30 gün",
+      "PAID": "Ödendi",
+      "PAYOUT_PROGRESS": "Devam ediyor",
+      "NO_REWARD": "Ödül bulunamadı.",
+      "TOTAL_TRANSACTIONS": "Toplam işlem(ler)",
+      "TOTAL_PAID": "Toplam ödenen",
+      "TOTAL_UNPAID": "Toplam ödenmeyen",
+      "NO_PAYOUT": "Ödeme bulunamadı.",
+      "CONFIRMED_BLOCK": "Onaylanan blok",
+      "DOWNLOAD_CSV": "CSV indir",
+      "CRITICAL_TITLE": "Kritik:",
+      "CRITICAL_MSG": "{{version}} sürümü havuz tarafından desteklenmiyor. Lütfen harvester'ınızı en son sürüme yükseltin. Minimum {{min}} sürümü gereklidir; şu anda partials'leriniz kabul edilmeyecektir.",
+      "WARNING_TITLE": "Uyarı:",
+      "WARNING_MSG": "{{version}} sürümü havuz tarafından destekleniyor ancak mümkünse harvester'ınızı en son sürüme yükseltin."
+    }
+  },
+  "PARTIALS": {
+    "OVERVIEW": {
+      "TITLE": "Partials genel bakışı (tüm çiftçiler)"
+    },
+    "BUTTONS": {
+      "TOTAL_RECEIVED": "partials",
+      "TOTAL_BLOCKS": "bloklar",
+      "RESUME": "Sürdür",
+      "PAUSE": "Duraklat",
+      "CLEAR": "Temizle"
+    },
+    "LIST": {
+      "TIME": "Zaman",
+      "SIGNAGE_POINT": "İşaret noktası",
+      "TO_BE_VALIDATED": "Doğrulanacak",
+      "VALID": "Geçerli",
+      "STALE": "Bayat",
+      "DUPLICATE": "Kopya",
+      "INVALID": "Geçersiz",
+      "BLOCKS_FOUND": "Bulunan bloklar",
+      "ACTIVITY": "Canlı etkinlik (son {{hours}}s)",
+      "FARMER": "Çiftçi",
+      "PLOT_ID": "Plot kimliği",
+      "CHIA_VERSION": "Chia sürümü",
+      "RESOLVED_IN": "İçinde çözüldü",
+      "NO_PARTIAL_RETAINED": "Bu işaret noktası için partial tutulmadı.",
+      "SHOWING_200": "Bu işaret noktası için en son 200 partial gösteriliyor — daha eskileri bu canlı görünümden kaldırıldı.",
+      "WAITING": "Canlı partials bekleniyor...",
+      "MATCHED_TOOLTIP": "En yakın zaman damgasıyla eşleştirildi, 2 dakika içinde"
+    }
+  },
+  "BREADCRUMBS": {
+    "HOME": "Ana sayfa",
+    "INFO": "Bilgi",
+    "FARMERS": "Çiftçiler",
+    "DETAILS": "Ayrıntılar",
+    "REWARDS": "Ödüller",
+    "BLOCKS": "Bloklar",
+    "POOL": "Havuz",
+    "STATUS": "Durum",
+    "STATS": "İstatistikler",
+    "LOGS": "Günlükler",
+    "JOIN": "Katıl",
+    "SETTINGS": "Ayarlar",
+    "CHIA": "Chia",
+    "FEE": "Ücret",
+    "TEAM": "Ekip",
+    "FAQ": "SSS",
+    "PARTIALS": "Partials",
+    "FARMER": "Çiftçi"
+  },
+  "TOPBAR": {
+    "JOIN_POOL": "Havuzumuza katılın",
+    "LANGUAGE_ALT": "Başlık dili",
+    "USER_IMAGE_ALT": "Kullanıcı görseli"
+  },
+  "COMMON": {
+    "DATE": "Tarih",
+    "DATETIME": "Tarih ve saat",
+    "AMOUNT": "Tutar",
+    "FEE": "Ücret",
+    "STATUS": "Durum",
+    "HEIGHT": "Yükseklik",
+    "UNKNOWN": "Bilinmiyor",
+    "CONFIRMED": "Onaylandı",
+    "PENDING": "Beklemede",
+    "PRICE": "Fiyat",
+    "ID": "ID",
+    "NAME": "Ad",
+    "VERSION": "Sürüm",
+    "ADDRESS": "Adres",
+    "SYNCED": "Senkronize",
+    "SYNCING": "Senkronize ediliyor",
+    "NOT_SYNCED": "Senkronize değil",
+    "YES": "Evet",
+    "NO": "Hayır",
+    "SIZE": "Boyut",
+    "POINTS": "Puanlar",
+    "TRANSACTION": "İşlem",
+    "AVAILABLE": "Kullanılabilir",
+    "LOADING": "Yükleniyor...",
+    "ONLINE": "Çevrimiçi",
+    "OFFLINE": "Çevrimdışı",
+    "UNDEFINED": "Tanımsız",
+    "DIFFICULTY": "Zorluk",
+    "ROLE": "Rol",
+    "FINGERPRINT": "Parmak izi",
+    "LOCATION": "Konum",
+    "MEMPOOL": "Mempool",
+    "HARVESTER": "Harvester",
+    "PLOT_SIZE": "Plot boyutu",
+    "CHIA_VERSION": "Chia sürümü",
+    "TIME_TAKEN": "Geçen süre",
+    "STATE": "Durum",
+    "BLOCKS": "Blok(lar)",
+    "AUTO": "(otomatik)",
+    "GIGAHORSE_TITLE": "Bu ödül Gigahorse tarafından ücret olarak alındı",
+    "PROGRESS": "İlerleme",
+    "DAY": "gün",
+    "DAYS": "gün",
+    "CLOSE": "Kapat"
+  },
+  "CHART": {
+    "BLOCKS": "Blok(lar)",
+    "EFFORT": "Efor",
+    "DIFFICULTY": "Zorluk",
+    "POINTS": "Puanlar",
+    "SUCCESSFUL_PARTIALS": "Başarılı partials",
+    "FAILED_PARTIALS": "Başarısız partials",
+    "PARTIALS_TITLE": "Başarılı ve başarısız partials",
+    "PARTIAL_TIME_TAKEN": "Partial başına geçen süre",
+    "AMOUNT_XCH": "Tutar (XCH)",
+    "SIZE_8H": "Boyut (8 saatlik ortalama)",
+    "SIZE_24H": "Boyut (24 saatlik ortalama)",
+    "VALID": "Geçerli",
+    "TO_BE_VALIDATED": "Doğrulanacak",
+    "INVALID_REVERTED": "Geçersiz / geri alındı",
+    "DUPLICATE": "Kopya"
+  },
+  "FEE": {
+    "TITLE": "Havuz ücreti",
+    "DESC_1": "Şu anda %0,75 ücret alıyoruz. Bu ücret her çiftçinin ödülünden düşülür.",
+    "DESC_2": "Örneğin, belirli bir turda çiftçi 0,05 XCH'lik bir paya hak kazanırsa, bunun %0,75'i (0,000375 XCH) havuz ücreti olarak tutulur ve kalan (0,049625 XCH) çiftçiye yatırılır."
+  },
+  "TEAM": {
+    "ROLE": "Sahibi ve fullstack geliştirici",
+    "DJERFY_HANDLE": "🌱 DJΞRFY 🚀"
+  },
+  "POOL_LOGS": {
+    "SHOW_PARTIALS": "Partial günlüklerini göster",
+    "SHOW_PAYMENTS": "Ödeme günlüklerini göster"
+  },
+  "JOIN": {
+    "LATENCY": "{{name}} gecikmesi ({{url}})",
+    "REQUIREMENTS": "Gereksinimler",
+    "REQ_CLIENT_PART1": "Havuz plotlarını destekleyen resmi Chia istemcisini kullandığınızdan emin olun,",
+    "REQ_CLIENT_VERSION": "sürüm 2.7.0 veya sonrası",
+    "REQ_CLIENT_PART2": "Şunları yapabilirsiniz",
+    "REQ_CLIENT_LINK": "resmi Chia talimatlarını burada görüntüleyin",
+    "REQ_SYNC": "Havuza katılmadan önce düğümünüz ve cüzdanınız Chia blockchain'i ile tamamen senkronize olmalıdır.",
+    "REQ_MOJO": "Resmi Faucet web sitesinden alabileceğiniz 1 Mojo'ya (0,000000000001 XCH) ihtiyacınız olacak:",
+    "POOL_ADDRESS": "Havuz adresi",
+    "GLOBAL_SERVER": "Global sunucu:",
+    "JOIN_CLI": "CLI'dan havuza katılın",
+    "CLI_WALLET_ID": "Cüzdan kimliğinizi alın:",
+    "CLI_JOIN_PART1": "Katılıyor",
+    "CLI_JOIN_PART2": "havuzuna şununla:",
+    "CLI_CONFIRM_1": "Onayınızı isteyecek, tüm ayrıntıları kontrol edin ve Y ile onaylayın.",
+    "CLI_CONFIRM_2": "Birkaç dakika bekleyin ve keyfini çıkarın! 🎉"
+  },
+  "REWARDS": {
+    "TOTAL_CLAIMED": "Toplam talep edilen",
+    "TOTAL_DISTRIBUTED": "Toplam dağıtılan",
+    "TOTAL_FEE": "Toplam ücret",
+    "CHART_TITLE": "Ödül grafiği",
+    "TITLE": "Ödüller"
+  },
+  "REWARD": {
+    "BLOCK_HEIGHT": "Blok yüksekliği",
+    "FARMERS_LIST": "Çiftçi listesi",
+    "REWARD_ID": "Ödül kimliği",
+    "LAUNCHER_ID": "Launcher kimliği",
+    "POOL_FEE": "Havuz ücreti"
+  },
+  "BLOCKS": {
+    "TOTAL_BLOCKS_FOUND": "Toplam bulunan bloklar",
+    "EST_TIME_PER_BLOCK": "Blok başına tahmini süre",
+    "CURRENT_EFFORT": "Güncel efor",
+    "CHART_TITLE": "Blok grafikleri",
+    "BLOCKS_PER_DAY": "Günlük bloklar",
+    "BLOCKS_PER_EFFORT": "Efor başına bloklar",
+    "TITLE_FOUND": "Bulunan bloklar",
+    "FARMER": "Çiftçi",
+    "SINGLETON": "Singleton",
+    "POOL_REWARD": "Havuz ödülü",
+    "POOL_SPACE": "Havuz alanı",
+    "POOL_EFFORT": "Havuz eforu",
+    "LUCKY": "Şanslı",
+    "AVERAGE": "Ortalama",
+    "UNLUCKY": "Şanssız"
+  },
+  "POOL_STATS": {
+    "POOL_SPACE_7D": "Havuz alanı (7 gün)",
+    "MEMPOOL_7D": "Mempool boyutu (7 gün)",
+    "NETSPACE_7D": "Netspace boyutu (7 gün)",
+    "XCH_PRICE_7D": "XCH fiyatı (7 gün)",
+    "PARTIALS_TOTAL": "Toplam partials",
+    "VERSIONS": "Sürümler",
+    "ERRORS": "Hatalar",
+    "HOSTS": "Ana bilgisayarlar"
+  },
+  "LOGIN": {
+    "AUTH_FAILED_TITLE": "Kimlik doğrulama hatası!",
+    "AUTH_FAILED_DESC": "Kimlik doğrulama hatası! Giriş URL'nizi kontrol edin ve tekrar deneyin.",
+    "GLOBAL": "Genel",
+    "FARMER_NAME": "Çiftçi adı",
+    "FARMER_EMAIL": "Çiftçi e-postası",
+    "FARMER_PICTURE": "Çiftçi resmi",
+    "NOT_SET": "(ayarlanmadı)",
+    "MIN_PAYOUT": "Minimum ödeme (XCH)",
+    "DIFF_LOWEST": "En düşük – günde gönderilen partials'in iki katı",
+    "DIFF_LOW": "Düşük – günde %50 daha fazla partials",
+    "DIFF_MEDIUM": "Varsayılan – günde yaklaşık 600 partials",
+    "DIFF_HIGH": "Yüksek – günde %25 daha az partials",
+    "DIFF_HIGHEST": "En yüksek – günde %50 daha az partials",
+    "DIFF_CUSTOM": "Özel – günde gönderilen partials sayısı",
+    "DIFF_EXPERT": "Uzman – manuel zorluk ayarlayın (uyarı)",
+    "HARVESTER_RENAME_PLACEHOLDER": "Harvester adı girin",
+    "SAVE": "Ayarları kaydet",
+    "SAVE_ERROR": "Parametrelerden birinde bir hata oluştu. Lütfen formu kontrol edin ve tekrar deneyin."
+  },
+  "POOL_STATUS": {
+    "BLOCKCHAIN_HEIGHT": "Blockchain yüksekliği",
+    "POOL_SHARE": "Havuz payı",
+    "API_STATUS": "API durumu",
+    "HEALTHY": "Sağlıklı",
+    "NODES_STATUS": "Düğüm durumu",
+    "OK": "Tamam",
+    "DEGRADED": "Azalmış",
+    "CRITICAL": "Kritik",
+    "WALLETS_STATUS": "Cüzdan durumu",
+    "UNHEALTHY": "Sağlıksız",
+    "POOL_WALLETS": "Havuz cüzdanları",
+    "POOL_NODES": "Havuz düğümleri",
+    "MAINTENANCE": "Bakım",
+    "PRIMARY": "Birincil",
+    "STANDBY": "Beklemede",
+    "UNAVAILABLE": "Kullanılamıyor",
+    "DUST_STORM": "Toz fırtınası tespit edildi:"
+  },
+  "FAQ": {
+    "P0_TITLE": "Pool.Energy nedir?",
+    "P0_BODY": "Pool.Energy bir Chia farming havuzudur. İyi ekipman sizi ancak bir yere kadar götürür. Birkaç yüksek güçlü hdd-plotter çalıştırıyor olabilirsiniz, ancak yine de Chia farming okyanusunda sadece bir damla olacaksınız. Gerçekten bir blok kazabilme şansınız, ekipmanınıza ve onu çalıştırmak için gereken elektriğe büyük miktarlarda para harcamış olsanız bile oldukça düşüktür. Bir blok ödülü ödemesini ne zaman alacağınızın ya da böyle bir ödeme alıp almayacağınızın garantisi yoktur. Sabit bir gelir istiyorsanız, şansınız bir Chia farming havuzunda çok daha yüksek olacaktır.",
+    "P1_TITLE": "Minimum ödemeler nelerdir?",
+    "P1_BODY": "Pool.Energy'in ödemeler için herhangi bir minimum ödemesi yoktur. Her plot ve her çiftçi bizim için değerlidir. Çiftliğinizin boyutunu düşünmeden özgürce katılabilirsiniz.",
+    "P2_TITLE": "Chia istemci sürümü?",
+    "P2_BODY": "30 Nisan 2026'dan itibaren Pool.Energy yalnızca Chia v2.7.0 veya üzerini destekler. v2.7.0'dan önceki Chia'yı kullanan çiftçiler blok oluşturamaz. Havuz, eski sürümlerden gelen tüm partials'leri reddeder!",
+    "P3_TITLE": "Havuz ödülleri nasıl hesaplanır?",
+    "P3_BODY_1": "Şunları kullanırız",
+    "P3_PPLNS": "PPLNS (Pay Per Last N Shares)",
+    "P3_BODY_2": "chia çiftçi ödülleri için. Bir çiftçi bir blok bulduğunda, her çiftçi son 24 saatte havuza gönderilen partials'in pay oranını kazanır. Çiftçilerimiz bir blok bulduğunda ödemeler bir saat içinde gerçekleşir. Toz fırtınası nedeniyle zamanlama değişebilir ancak havuz cüzdanımızda hiçbir chia saklamayız. Havuz durumu bölümünden adresimizi kontrol etmekten çekinmeyin.",
+    "P4_TITLE": "Çiftçi ayarları nasıl değiştirilir?",
+    "P4_BODY_1": "Launcher kimliği, bir çiftçinin her NFT plotu için nasıl tanımlandığıdır. Uzun bir onaltılık dizedir ve kullanıcı dostu değildir. Havuzumuzda daha kolay tanımlama için kullanıcıların panelde dostça bir ad belirlemesine, launcher kimliğiniz için bir takma ad belirlemesine olanak tanıyoruz.",
+    "P4_BODY_2": "Ayarlar sayfasından takma adınızı, profil resminizi, e-postanızı (bildirimler), minimum ödemenizi ve zorluğunuzu değiştirebilirsiniz.",
+    "P4_IMG_ALT": "çiftçi ayarları",
+    "P5_TITLE": "Nasıl giriş yapılır (CLI)?",
+    "P5_BODY_1": "Launcher kimliğinizi alın:",
+    "P5_BODY_2": "Launcher kimliğinizle bağlantıyı alın:",
+    "P6_TITLE": "Nasıl giriş yapılır (GUI)?",
+    "P6_BODY_1": "Chia GUI ve Pooling'i (1) açın ve https://chia.pool.energy (2) ile havuzumuzu seçin.",
+    "P6_BODY_2": "3 noktalı menüye (3) ve ardından View Pool Login Link'e (4) tıklayın.",
+    "P6_IMG_ALT": "gui girişi",
+    "P7_TITLE": "Özel zorluk nasıl ayarlanır?",
+    "P7_BODY_1": "Havuzumuz, gönderdiğiniz partials sayısına göre zorluğu ayarlar. Nasıl çalıştığı şöyledir:",
+    "P7_BODY_2": "İlk olarak, seçtiğiniz zorluğa göre hedef partials sayısı belirleriz. Zorluk seçenekleri LOWEST, LOW, MEDIUM, HIGH ve HIGHEST'dir. Ayrıca Gigahorse'unuz varsa özel bir değerle CUSTOM zorluk seçebilirsiniz.",
+    "P7_BODY_3": "Değer, günde gönderilen kendi hedef partials sayınızdır. Örneğin 100, hedef partials sayısını 100 yapar. Yaklaşık bu sayıda partials göndermeyi hedeflemelisiniz. Çok daha az veya çok daha fazla gönderirseniz, sistem geçen süreyi buna göre ayarlar.",
+    "P7_BODY_4": "- Son partials sayısı hedef sayıdan azsa ve geçen süre hedef sürenin %80'inden azsa, mevcut zorluk değiştirilmeden döndürülür.",
+    "P7_BODY_5": "- Son partials sayısı hedef sayıdan azsa, geçen süre hedef sayının son partials sayısına oranıyla çarpılarak ayarlanır.",
+    "P7_BODY_6": "- Son partials sayısı hedef sayının %150'sinden fazlaysa, geçen süre de azaltılarak ayarlanır, böylece daha az gönderdiğiniz görünür.",
+    "P7_BODY_7": "Son olarak, yeni zorluk, mevcut zorluğun hedef sürenin geçen süreye oranıyla çarpılmasıyla hesaplanır ve zorluk ile yeni zorluk arasındaki daha büyük değer döndürülür."
+  }
+}

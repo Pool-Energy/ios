@@ -9,10 +9,6 @@ A native **SwiftUI** client for the [Pool.Energy](https://pool.energy) public
 API — the Chia farming pool dashboard, rebuilt for iPhone with live WebSocket
 updates, native charts and seven languages.
 
-<p align="center">
-  <img src="docs/screenshots/farmer.png" width="260" alt="Farmer detail screen">
-</p>
-
 | Farmers | Farmer detail | Blocks |
 | --- | --- | --- |
 | ![Farmers](docs/screenshots/farmers.png) | ![Farmer](docs/screenshots/farmer.png) | ![Blocks](docs/screenshots/blocks.png) |
